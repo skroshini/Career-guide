@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Science and Technology</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</a></li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Science and Technology</h1>
+ <p>Science is the systematic study of the natural and physical world through observation, experimentation, and analysis.</p>
+<p>Technology is the practical application of scientific knowledge to develop tools, systems, and processes that solve real-world problems.
+</p>
+  </div>
+ <div class="section">
+      <h2>Difference between Science and Technology</h2>
+      <ul>
+        <li><b>Science:</b> Focuses on discovering new knowledge, understanding natural laws, and conducting research.</li>
+        <li><b>Technology:</b> Focuses on applying scientific knowledge to create innovations, products, and solutions for society.</li>
+      </ul>
+    </div>
+
+
+ <div class="section">
+  <h2>Core Subjects In Science </h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-atom"></i>
+      <h3>Physics</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-flask"></i>
+      <h3>Chemistry</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-dna"></i>
+      <h3>Biology </h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-square-root-alt"></i>
+      <h3>Mathematics</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-leaf"></i>
+      <h3>Environmental Science</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-star"></i>
+      <h3>Astronomy</h3>
+    </div>
+   </div>
+</div>
+
+<div class="section">
+  <h2>Core Subjects In Technology </h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Computer Science</h3>
+     </div>
+    <div class="study-box">
+      <i class="fas fa-network-wired"></i>
+      <h3>Information Technology</h3>
+      </div>
+    <div class="study-box">
+      <i class="fas fa-robot"></i>
+      <h3>Artificial Intelligence & Machine Learning</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-database"></i>
+      <h3>Data Science</h3>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-microchip"></i>
+      <h3>Electronics & Communication</h3>
+     </div>
+    <div class="study-box">
+      <i class="fas fa-cogs"></i>
+      <h3>Mechanical & Civil Engineering</h3>
+    </div>
+   </div>
+</div>
+
+
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <div class="section">
+      <h2>Skills You Will Gain</h2>
+     <ol>
+        <li>Core Skills</li> 
+         <ul>
+           <li>Analytical Thinking 🧠</li>
+           <li>Research Skills 🔬</li>
+           <li>Critical Thinking 📊</li>
+           <li>Technical Knowledge ⚙️</li>
+           <li>Problem-Solving 💡</li>
+        </ul>
+       <li>Technology-Specific Skills</li>    
+         <ul>
+          <li>Programming & Coding 💻</li>
+          <li>Data Analysis & Visualization 📈</li>
+          <li>AI & Machine Learning Fundamentals 🤖</li>
+          <li>Cybersecurity Awareness 🔐</li>
+          <li>Robotics & Automation Skills ⚡</li>
+          <li>Design & Creativity (Animation/Game Design) 🎨</li>
+        </ul>
+      <li>Soft Skills</li>
+       <ul>
+        <li>Communication & Presentation 🗣️</li>
+        <li>Teamwork & Collaboration 🤝</li>
+        <li>Time Management ⏳</li>
+        <li>Adaptability to New Tools & Innovations 🔄</li>
+      </ul>
+   </ol>
+
+    </div>
+  
+ 
+<div class="section">
+  <h2>Useful Websites for Science & Technology Careers</h2>
+  <ul>
+    <li><a href="https://www.sciencedaily.com/" target="_blank">ScienceDaily – Latest Research & News in Science</a></li>
+    <li><a href="https://www.nature.com/" target="_blank">Nature – Scientific Journals & Articles</a></li>
+    <li><a href="https://www.edx.org/learn/science" target="_blank">edX – Free Science & Technology Courses</a></li>
+    <li><a href="https://www.khanacademy.org/science" target="_blank">Khan Academy – Science Learning Resources</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Science & Technology Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+     <ol>
+      <li>🧪 Science Careers</li>
+      <ul>
+        <li>Research Scientist</li>
+        <li>Laboratory Technician</li>
+        <li>Biotechnologist</li>
+        <li>Environmental Scientist</li>
+        <li>Astronomer</li>
+        <li>Mathematician</li>
+        <li>Forensic Scientist</li>
+      </ul>
+      <li>💻 Technology Careers</li>
+       <ul>
+        <li>Software Developer</li>
+        <li>IT Specialist</li>
+        <li>Data Analyst / Data Scientist</li>
+        <li>AI Engineer</li>
+        <li>Cybersecurity Analyst</li>
+        <li>Robotics Engineer</li>
+        <li>Cloud Architect</li>
+       </ul>
+     <ol>
+
+ </div>
+
+  <div class="section">
+    <h2>Best for students who </h2>
+    <ul>
+        <li>Have a curiosity to explore how the world and the universe work 🌍✨</li>
+        <li>Enjoy solving puzzles, problems, and logical challenges 🧩</li>
+        <li>Love working with experiments, tools, and technology 🔬💻</li>
+        <li>Are interested in innovation, creativity, and building new solutions 💡</li>
+        <li>Like mathematics and analytical reasoning ➗📊</li>
+        <li>Are comfortable with continuous learning in a fast-changing world 📚⚡</li>
+        <li>Aim for careers in research, engineering, IT, healthcare, or emerging technologies 🚀</li>
+      </ul>
+  </div>
+  <div class="section">
+<h2>Science Courses</h2>
+      <p>Undergraduate Courses:</p>
+     <li>B.Sc. (Bachelor of Science) in:</li>
+      <ul>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Mathematics</li>
+        <li>Biology</li>
+        <li>Environmental Science</li>
+        <li>Computer Science</li>
+        <li>Microbiology</li>
+        <li>Biotechnology</li>
+        <li>Zoology / BotanyStatistics</li>
+      </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>M.Sc. (Master of Science) in all above subjects</li>
+        <li>Integrated M.Sc. programs (5 years)</li>
+        <li>Specialized programs like:</li>
+         <ul>
+          <li>M.Sc. Data Science</li>
+          <li>M.Sc. Nanotechnology</li>
+          <li>M.Sc. Space Science</li>
+         </ul>
+      </ul>
+
+      <p>Doctoral (PhD):</p>
+      <ul>
+        <li>Ph.D. in Physics, Chemistry, Biology, etc.</li>
+        <li>Research-based programs in Astronomy, Genetics, Climate Science, etc.</li>
+      </ul>
+
+  </div>
+ <div class="section">
+<h2>Technology Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <li>B.Tech. / B.E. (Bachelor of Technology/Engineering) in:</li>
+      <ul>
+        <li>Computer Science & Engineering</li>
+        <li>Information Technology</li>
+        <li>Electronics & Communication Engineering</li>
+        <li>Mechanical Engineering</li>
+        <li>Civil Engineering</li>
+        <li>Electrical Engineering</li>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>Robotics & Automation</li>
+        <li>Aerospace Engineering</li>
+        <li>Biotechnology Engineering</li>
+        <li>Other Technology-focused UG: BCA (Bachelor of Computer Applications), B.Sc. Animation & Multimedia, B.Sc. Information Technology</li>
+      </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>M.Tech. / M.E. in all the above fields</li>
+        <li>MCA (Master of Computer Applications)</li>
+        <li>M.Sc. in Computer Applications / Information Technology</li>
+        <li>M.Tech. in Cybersecurity, Data Science, VLSI, etc.</li>
+      </ul>
+
+      <p>Doctoral (PhD):</p>
+      <ul>
+        <li>PhD in Finance</li>
+        <li>PhD in Financial Economics</li>
+        <li>PhD in Accounting & Finance</li>
+        <li>PhD in Banking & Insurance</li>
+        <li>Doctor of Business Administration (DBA) with Finance Specialization</li>
+      </ul>
+
+  </div>
+ <div class="section">
+<h2>NOTE</h2>
+<p>B.Sc. literally means “Bachelor of Science”. But in modern education, some applied and professional fields (like Computer Science, IT, Animation, Multimedia, Game Design) are also offered as B.Sc. degrees even though they lean more towards the technology side.</p>
+<p>Here’s the reasoning:</p>
+<p>Pure Sciences (Academic/Research oriented):
+B.Sc. Physics, B.Sc. Chemistry, B.Sc. Zoology → Focused on theoretical knowledge + research → falls under Science field.</p>
+<p>Applied Sciences (Technology-oriented):
+B.Sc. Computer Science, B.Sc. IT, B.Sc. Animation, B.Sc. Game Design → Though named “Science”, these are application-driven and prepare students for technology careers (software, IT, digital media, etc.).</p>
+<p>📌 So:</p>
+<p>If a B.Sc. course is about natural/physical sciences → Science field.</p>
+<p>If a B.Sc. course is about applied/computer/engineering/animation → Technology field.</p>
+<p>That’s why we placed B.Sc. Computer Science / Animation / IT under the Technology section, even though the degree title says “Science”.
+</p>
+  </div>
+
+
+</style>
+
+<div class="section">
+  <h2>Teaching Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose Science Stream in 11th & 12th</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Appear for Entrance Exams</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Choose UG Course (Science or Technology)
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i><br>
+      Pursue PG (optional)
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-building"></i><br>
+       Ph.D. / Research (optional)
+    </div>
+ <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-lightbulb"></i><br>
+      Careers in Science / Technology
+    </div>
+
+   </div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>

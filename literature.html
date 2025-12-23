@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Literature</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Literature</h1>
+ <p> A literature course is a program of study that focuses on reading, analyzing, and understanding written works — such as novels, short stories, poems, and plays — while also exploring their cultural, historical, and philosophical backgrounds    </p>
+  </div>
+
+ <div class="section">
+  <h2>Key Areas of Study</h2>
+  <p>(the main subjects and topics that u will typically learn during ur course)</p>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-book"></i>
+      <h3>Literary Genres and Forms</h3>
+      <p>Understanding poetry, drama, fiction, non-fiction, novels, short stories, epics, essays, etc.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-address-book"></i>
+      <h3>Literary History and Movements</h3>
+      <p>Studying periods like Classical, Renaissance, Romanticism, Modernism, Postmodernism, and how literature evolved.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-user"></i>
+      <h3>Themes and Ideas</h3>
+      <p>Exploring concepts like love, power, identity, morality, justice, and human experience.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-heart"></i>
+      <h3>Literary Devices and Techniques</h3>
+      <p>Learning about metaphor, simile, symbolism, irony, imagery, and other writing tools.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-search"></i>
+      <h3>Critical Reading and Analysis</h3>
+      <p>Interpreting texts deeply, finding hidden meanings, and supporting interpretations with evidence.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-clipboard"></i>
+      <h3>Cultural and Social Context</h3>
+      <p>Understanding how historical events, culture, and society influence literature.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-globe"></i>
+      <h3>Comparative Literature</h3>
+      <p>Comparing works across authors, countries, and time periods.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-map"></i>
+      <h3>Creative and Academic Writing Skills</h3>
+      <p>Improving both analytical essays and creative storytelling.</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome link (add in head if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+      <li>Critical Thinking</li>
+      <li>Close Reading Skills</li>
+      <li>Interpretation</li>
+      <li>Communication Skills</li>
+      <li>Analytical Writing</li>
+      <li>Creativity</li>
+      <li>Cultural Awareness</li>
+      <li>Empathy</li>
+      <li>Research Skills</li>
+      <li>Vocabulary & Language Mastery</li>
+</ul>
+  </div>
+<div class="section">
+  <h2>Useful Websites for Literature Students</h2>
+  <ul>
+    <li><a href="https://www.poetryfoundation.org/" target="_blank">Poetry Foundation – Poems, Authors & Literary Articles</a></li>
+    <li><a href="https://www.sparknotes.com/" target="_blank">SparkNotes – Summaries, Study Guides & Analysis</a></li>
+    <li><a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg – Free Classic Literature eBooks</a></li>
+    <li><a href="https://www.edx.org/learn/literature" target="_blank">edX – Free Literature Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Literature and Humanities Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Teaching & Academia – School teacher, college lecturer, professor.</li>
+      <li>Writing & Publishing – Author, poet, novelist, playwright.</li>
+      <li>Journalism & Media – Reporter, editor, content writer, columnist.</li>
+      <li>Editing & Proofreading – Copy editor, manuscript editor, publication reviewer.</li>
+      <li>Translation & Interpretation – Translating literary or technical works into different languages.</li>
+      <li>Public Relations & Communications – Corporate communication specialist, PR officer.</li>
+      <li>Creative Industries – Scriptwriter, screenwriter, advertising copywriter.</li>
+      <li>Library & Archival Work – Librarian, archivist, literary curator.</li>
+      <li>Research & Criticism – Literary critic, cultural researcher, academic researcher.</li>
+      <li>Digital Content Creation – Blogger, social media content strategist, online educator.</li>
+      <li>Civil Services & Administration – Many literature graduates enter government roles requiring strong communication skills.</li>
+      <li>Corporate Training – Soft skills trainer, language coach.</li>
+
+    </ul>  </div>
+
+  <div class="section">
+    <h2>Future Trends</h2>
+    <ul>
+      <li>AI & Literature Intersection</li>
+      <li>Hybrid Genres & Narrative Forms</li>
+      <li>Climate Fiction & Eco-Narratives</li>
+      <li>Inclusive Voices and Global Perspectives</li>
+      <li>Digital, Experimental, and Alt-Lit</li>
+      <li>Social Media’s Cultural Pull</li>
+      <li>Evolving Literary Experiences</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Best for students who </h2>
+<li>Love Reading and Stories</li>
+
+ <li>Are Curious About Human Experiences</li>
+
+ <li>Have Strong Imagination</li>
+ <li>Enjoy Analyzing and Interpreting</li>
+ 
+ <li>Have Good Communication Skills</li> 
+ <li>Are Interested in Culture and History</li>
+ <li>Pay Attention to Detail</li>
+ <li>Value Creativity</li>
+</div>
+</style>
+<!-- Add Font Awesome for icons in <head> -->
+<div class="section">
+  <h2>Literature Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose Humanities/Arts</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Appear for Entrance Exams (JEE, CET, etc.)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      BA in English Literature or related field
+      <small>4-year degree with core subjects</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i><br>
+      After BA you can do
+      <small>Higher studies (MA, MPhil, PhD) or professional courses in writing, journalism, teaching.</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Career Options
+      <small>School teacher, college lecturer, professor,Author, poet, novelist, playwright,Reporter, editor, content writer, columnist,Copy editor, manuscript editor, publication reviewer,Translating literary or technical works into different languages etc.</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-rocket"></i><br>
+      Future Growth
+      <small>Content demand is steadily rising, education & civil services remain steady anchors, high-paying & specialized roles are emerging.</small>
+    </div>
+  </div>
+</div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  /* Hover effects */
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  /* Arrow animation */
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<!-- Font Awesome link (only once in head) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<div class="section">
+<h2> Further studies</h2>
+<li>Advanced Academic Studies- MA in English Literature, MA in Comparative Literature, MA in Linguistics, MA in Cultural Studies, MPhil / PhD in Literature</li>
+<li>Creative & Professional Writing- MA/MFA in Creative Writing, Diploma in Scriptwriting / Screenwriting, Certificate in Copywriting</li>
+<li>Journalism, Media & Communication- MA in Journalism & Mass Communication (MAJMC)
+, PG Diploma in Journalism, MA in Media Studies, Diploma in Digital Marketing & Content Creation</li>
+<li>Education & Teaching- B.Ed (Bachelor of Education), TESOL/TEFL Certification, PG Diploma in English Language Teaching (ELT)</li>
+<li>Corporate & Business Paths- MBA in Communication Management / Media Management, MBA in Marketing / HR, PG Diploma in Technical Writing / Business Communication</li>
+<li>Translation & Linguistics- Diploma/Certificate in Translation Studies, MA in Translation Studies, Foreign Language Courses (French, Spanish, German, etc.)</li>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business And Finance</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Business and Finance</h1>
+ <p>Business and Finance are two interconnected but distinct fields. Business focuses on managing organizations, strategies, marketing, and operations, while Finance emphasizes money management, investments, risk assessment, and financial planning. Together, they form the backbone of global economies.</p>
+  </div>
+ <div class="section">
+      <h2>Difference between Business and Finance</h2>
+      <ul>
+        <li><b>Business:</b> Focuses on overall management, entrepreneurship, marketing, human resources, and organizational strategies.</li>
+        <li><b>Finance:</b> Concentrates on money, investments, financial markets, risk management, and economic planning.</li>
+      </ul>
+    </div>
+
+
+ <div class="section">
+  <h2>Core Subjects</h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-briefcase"></i>
+      <h3>Business Management</h3>
+      <p>Learning how to lead teams, manage organizations, and run companies effectively.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-chart-line"></i>
+      <h3>Finance & Investments</h3>
+      <p>Understanding financial markets, banking, and investment strategies.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-user"></i>
+      <h3>Human Resources</h3>
+      <p>Managing people, recruitment, and organizational development.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Marketing & Sales</h3>
+      <p>Building customer relationships, branding, and business growth strategies.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-balance-scale"></i>
+      <h3>Corporate Law & Ethics</h3>
+      <p>Understanding legal frameworks and ethical business practices.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-laptop"></i>
+      <h3>Financial Technology</h3>
+      <p>Using digital tools like fintech, blockchain, and AI in business.</p>
+    </div>
+   </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <div class="section">
+      <h2>Skills You Will Gain</h2>
+      <ul>
+        <li>Leadership & Strategic Thinking</li>
+        <li>Financial Analysis & Risk Management</li>
+        <li>Communication & Negotiation</li>
+        <li>Problem-Solving & Decision-Making</li>
+        <li>Marketing & Branding Skills</li>
+        <li>Data Analytics & Technological Adaptability</li>
+        <li>Entrepreneurship & Innovation</li>
+      </ul>
+    </div>
+<div class="section">
+  <h2>Useful Websites for Business & Finance Careers</h2>
+  <ul>
+    <li><a href="https://www.investopedia.com/" target="_blank">Investopedia – Finance & Investment Learning</a></li>
+    <li><a href="https://www.coursera.org/browse/business" target="_blank">Coursera – Business & Finance Courses</a></li>
+    <li><a href="https://www.moneycontrol.com/" target="_blank">Moneycontrol – Market News & Analysis</a></li>
+    <li><a href="https://www.edx.org/learn/business" target="_blank">edX – Free Business Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Business and Finance Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+      <ul>
+        <li>Business Manager</li>
+        <li>Entrepreneur / Startup Founder</li>
+        <li>Financial Analyst</li>
+        <li>Investment Banker</li>
+        <li>Corporate Consultant</li>
+        <li>Marketing & Sales Executive</li>
+        <li>Human Resources Manager</li>
+        <li>Wealth Manager / Financial Planner</li>
+        <li>Stock Market Analyst</li>
+      </ul>
+ </div>
+
+  <div class="section">
+    <h2>Best for students who like</h2>
+    <ul>
+        <li>Solving real-world problems through planning and decision-making</li>
+        <li>Working with numbers, money, and investments</li>
+        <li>Analyzing markets, businesses, and economic trends</li>
+        <li>Leading teams, managing organizations, and creating strategies</li>
+        <li>Thinking critically and making smart financial choices</li>
+        <li>Exploring careers in entrepreneurship, banking, accounting, or corporate management</li>
+      </ul>
+  </div>
+  <div class="section">
+    <h2>Not the best fit for students who</h2>
+      <ul>
+        <li>Dislike working with numbers, data, or financial concepts</li>
+        <li>Prefer highly creative or artistic fields over structured analysis</li>
+        <li>Avoid leadership, teamwork, or decision-making roles</li>
+        <li>Struggle with critical thinking, logical reasoning, or problem-solving</li>
+        <li>Prefer careers that don’t involve planning, organization, or management</li>
+        <li>Want to stay away from fast-paced, competitive work environments</li>
+      </ul>
+</div>
+ <div class="section">
+<h2>Business Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <ul>
+        <li>BBA (Bachelor of Business Administration</li>
+        <li>BMS (Bachelor of Management Studies)</li>
+        <li>BA in Business Economics</li>
+        <li>BBA in International Business</li>
+        <li>B.Com in Business Studies</li>
+        <li>BBA in Marketing / HR / Entrepreneurship</li>
+      </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>MBA (Master of Business Administration)</li>
+        <li>PGDM (Post Graduate Diploma in Management)</li>
+        <li>M.Com in Business Management</li>
+        <li>MBA in International Business / Marketing / HR / Finance / Analytics</li>
+        <li>Executive MBA (for professionals)</li>
+      </ul>
+
+      <p>Doctoral (PhD):</p>
+      <ul>
+        <li>PhD in Business Administration</li>
+        <li>PhD in Management Studies</li>
+        <li>PhD in Organizational Behavior / Marketing / HR / Strategy</li>
+        <li>Doctor of Business Administration (DBA)</li>
+      </ul>
+
+  </div>
+ <div class="section">
+<h2>Finance Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <ul>
+        <li>B.Com in Finance</li>
+        <li>BA in Economics / Financial Economics</li>
+        <li>BBA in Finance</li>
+        <li>Bachelor in Banking & Insurance</li>
+        <li>B.Sc. in Finance / Accounting</li>
+        <li>BBA in Financial Markets & Investment</li>
+      </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>MBA in Finance</li>
+        <li>M.Com in Finance & Accounting</li>
+        <li>Master’s in Financial Economics</li>
+        <li>PGDM in Finance</li>
+        <li>MSc in Finance / Investment Banking / Financial Analytics</li>
+        <li>Chartered Financial Analyst (CFA – professional course, PG level)</li>
+        <li>Certified Management Accountant (CMA)</li>
+        <li>Certified Public Accountant (CPA)</li>
+</ul>
+
+      <p>Doctoral (PhD):</p>
+      <ul>
+        <li>PhD in Finance</li>
+        <li>PhD in Financial Economics</li>
+        <li>PhD in Accounting & Finance</li>
+        <li>PhD in Banking & Insurance</li>
+        <li>Doctor of Business Administration (DBA) with Finance Specialization</li>
+      </ul>
+
+  </div>
+ <div class="section">
+<h2>Top Trending Courses in Business & Finance</h2>
+      <ul>
+        <li>MBA in Business Analytics & Finance</li>
+        <li>BBA in International Business & Finance</li>
+        <li>MSc in Investment Banking & Financial Analytics</li>
+        <li>Executive MBA in Leadership & Finance</li>
+        <li>PhD in Business & Financial Economics</li>
+      </ul>
+ </div>
+
+
+</style>
+
+<div class="section">
+  <h2>Teaching Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Take Commerce Stream (11th–12th) with subjects like: Accountancy, Business Studies, Economics, Mathematics (recommended)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Attempt entrence tests</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Undergraduate Degree
+      <small>BBA (Bachelor of Business Administration), B.Com (General / Finance / Banking), BMS (Bachelor of Management Studies), B.Sc. in Banking & Finance, BA in Business Economics</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i><br>
+      Postgraduation
+      <small>MBA in Finance / Banking / Business Analytics, M.Com in Banking & Finance, PGDM in Business & Finance, MSc in Investment Banking / Financial Analytics, (Professional Certifications: CFA (Chartered Financial Analyst), CMA (Certified Management Accountant), CPA (Certified Public Accountant), CAIIB (Banking specialization))</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-building"></i><br>
+      Doctoral / Research (Optional)
+      <small>PhD in Finance / Banking / Business, DBA (Doctor of Business Administration)
+  </small>
+    </div>
+ <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-lightbulb"></i><br>
+      Career Opportunities
+      <small>Banking, Business, Finance, Global Careers
+  </small>
+    </div>
+
+   </div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

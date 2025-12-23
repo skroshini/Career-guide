@@ -1,0 +1,533 @@
+  <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elecctrical field</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+ 
+ <!-- ROBOTICS CAREER OVERVIEW -->
+<div class="section">
+  <h2>Careers in Robotics</h2>
+  <p>Robotics combines mechanical, electrical, and computer engineering to design, build, and program robots for various industries.</p>
+
+<!-- ROBOTICS KEY AREAS FLIP CARDS -->
+<div class="section">
+  <h2>Key Areas in Robotics</h2>
+  <p>(Click the card to flip for details)</p>
+
+  <div class="study-grid">
+    
+    <!-- Industrial Robotics -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-industry"></i>
+          <h3>Industrial Robotics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Design and maintain robots for manufacturing, assembly lines, and industrial automation to improve efficiency.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Robotics -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-hand-holding-medical"></i>
+          <h3>Service Robotics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Robots assisting humans in healthcare, domestic tasks, and customer service sectors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medical Robotics -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Medical Robotics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Surgical robots, rehabilitation devices, and assistive robots to enhance medical care.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Autonomous Vehicles -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-car"></i>
+          <h3>Autonomous Vehicles</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Self-driving cars, drones, and unmanned vehicles using AI and sensors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Humanoid Robotics -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-robot"></i>
+          <h3>Humanoid Robotics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Human-like robots for research, interaction, and assistance.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Robotics Software & AI -->
+    <div class="flip-card" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-code"></i>
+          <h3>Robotics Software & AI</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Programming robots, AI integration, and machine learning for intelligent behaviors.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.flip-card {
+  background-color: transparent; /* Transparent background */
+  width: 100%;
+  height: 200px;
+  border: 2px solid gold; /* Golden border */
+  border-radius: 10px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.flip-card-front {
+  background-color: rgba(255,255,255,0.05); /* Slight transparency for front */
+}
+
+.flip-card-front i {
+  font-size: 28px;
+  color: gold;
+  margin-bottom: 8px;
+}
+
+.flip-card-back {
+  background-color: rgba(0,0,0,0.2); /* Slight transparency for back */
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.flip-card.active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+</style>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="section">
+    <div class="study-step">
+      <h3>2. Skills Required</h3>
+      <ul>
+        <li>Programming: Python, C++, ROS (Robot Operating System)</li>
+        <li>Mechanical Design: CAD, 3D printing, material science</li>
+        <li>Electronics & Control Systems: Sensors, actuators, embedded systems</li>
+        <li>AI & Machine Learning: For autonomous and intelligent robots</li>
+        <li>Problem Solving & Innovation: Critical thinking and design skills</li>
+      </ul>
+    </div>
+    </div>
+    <div class="section">
+  <h2>Useful Websites for Robotics Engineers</h2>
+  <ul>
+    <li><a href="https://www.ieee-ras.org/" target="_blank">IEEE RAS – Robotics & Automation Society</a></li>
+    <li><a href="https://www.robotics.org/" target="_blank">RIA – Robotics Industries Association</a></li>
+    <li><a href="https://www.edx.org/learn/robotics" target="_blank">edX – Free Robotics Courses</a></li>
+    <li><a href="https://www.robotics.org/blog-article.cfm" target="_blank">Robotics Online – Tutorials & Industry Updates</a></li>
+    <li><a href="https://www.sciencedirect.com/journal/robotics-and-autonomous-systems" target="_blank">ScienceDirect – Robotics Research Papers</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Robotics Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<div class="section">
+    <div class="study-step">
+      <h3>3. Future Trends in Robotics</h3>
+      <ul>
+        <li>Collaborative robots (Cobots) working safely with humans</li>
+        <li>Robots in healthcare and eldercare for assistance</li>
+        <li>Autonomous drones and delivery robots</li>
+        <li>Integration of AI, IoT, and edge computing in robotics</li>
+        <li>Soft robotics for delicate tasks and human interaction</li>
+        <li>Robotics in space exploration and underwater missions</li>
+      </ul>
+    </div>
+</div>
+    <!-- HOW TO GET INTO ROBOTICS FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>How to Get into Robotics after 10th?</h2>
+  <p>(Step-by-step pathway from school to career)</p>
+
+  <div class="flowchart-vertical">
+    
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+      <p>Complete 10th Grade with Science & Math focus</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      <p>Choose Science Stream in 11th–12th (Physics, Chemistry, Math, optional Computer Science)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i>
+      <p>Prepare & appear for Engineering Entrance Exams (JEE, State CET, etc.)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+      <p>Enroll in B.E/B.Tech in Robotics, Mechatronics, Electrical, Mechanical, or Computer Science</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-tools"></i>
+      <p>Work on projects, internships, and competitions to gain practical experience</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i>
+      <p>Graduate & explore job opportunities or pursue higher studies and certifications in Robotics/AI/Automation</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+.flowchart-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 260px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-step i {
+  font-size: 28px;
+  color: gold;
+  margin-bottom: 6px;
+}
+
+.flow-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.5);
+  border-color: gold;
+}
+
+.flow-arrow {
+  font-size: 24px;
+  color: gold;
+}
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="section">
+    <div class="study-step">
+      <h3>5. Further Studies & Certifications</h3>
+      <ul>
+        <li>M.Tech / M.E in Robotics, Mechatronics, or AI & Automation</li>
+        <li>Postgraduate diplomas or certifications in AI, ROS, PLC programming, IoT, or Industrial Automation</li>
+        <li>Online courses from Coursera, Udemy, EdX, MIT OpenCourseWare for Robotics & AI</li>
+        <li>Research opportunities in humanoid robots, AI-driven robotics, and autonomous systems</li>
+      </ul>
+    </div>
+    </div>
+<div class="section">
+    <div class="study-step">
+      <h3>6. Career Opportunities</h3>
+      <ul>
+        <li>Robotics Engineer / Mechatronics Engineer</li>
+        <li>Automation Engineer / Industrial Robotics Specialist</li>
+        <li>AI & Robotics Researcher</li>
+        <li>Robotics Software Developer</li>
+        <li>Drone and Autonomous Vehicle Engineer</li>
+        <li>Robotics Consultant for industries like healthcare, manufacturing, defense, and space</li>
+      </ul>
+    </div>
+</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Robotics: Best for Students Who...</h2>
+
+  <ul>
+    <li><strong>Strong in Science & Math:</strong> Enjoy Physics, Mathematics, and basic Chemistry concepts.</li>
+    <li><strong>Interested in Technology:</strong> Curious about electronics, machines, and how things work.</li>
+    <li><strong>Passionate About Programming & AI:</strong> Enjoy coding, algorithms, and developing intelligent systems.</li>
+    <li><strong>Problem Solvers & Innovators:</strong> Like designing solutions, experimenting, and building things.</li>
+    <li><strong>Creative & Analytical:</strong> Combine creativity with logical thinking to design robots or systems.</li>
+    <li><strong>Team Players:</strong> Able to work in multidisciplinary teams including engineers, designers, and programmers.</li>
+    <li><strong>Curious About Future Tech:</strong> Interested in autonomous systems, drones, AI, and smart machines.</li>
+  </ul>
+</div>
+  </main>
+  </body>
+  </html>

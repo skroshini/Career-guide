@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Management</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+     <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+<li></li>
+      <li></li>
+    </ul>
+
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Hotel Management</h1>
+ <p>Hotel Management is a professional course that prepares students for careers in the hospitality industry. It covers the study of managing hotels, resorts, restaurants, and other hospitality services. Students learn customer service, operations, finance, marketing, and leadership to excel in this field.</p>
+  </div>
+
+ <div class="section">
+  <h2>Common Subjects in Hotel Management</h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-utensils"></i>
+      <h3>Food & Beverage Management</h3>
+      <p>Learning how to manage restaurants, catering, and dining services.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-bed"></i>
+      <h3>Front Office Operations</h3>
+      <p>Reception, reservations, and customer handling skills.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-broom"></i>
+      <h3>Housekeeping</h3>
+      <p>Maintaining cleanliness and quality standards in hotels.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-briefcase"></i>
+      <h3>Criminal Law</h3>
+      <p>Offenses and punishments</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-briefcase"></i>
+      <h3>Hospitality Marketing</h3>
+      <p>Promoting hotels, resorts, and travel experiences.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-users"></i>
+      <h3>Human Resource Management</h3>
+      <p>Managing staff, training, and teamwork in the hospitality industry.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-globe"></i>
+      <h3>Tourism Management</h3>
+      <p>Understanding travel trends and customer service in tourism.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome link (add in head if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+        <li>Customer Service & Communication Skills</li>
+        <li>Leadership & Teamwork</li>
+        <li>Event Planning & Management</li>
+        <li>Food & Beverage Skills</li>
+        <li>Problem Solving & Quick Decision-Making</li>
+        <li>Time Management & Organization</li>
+        <li>Business & Financial Management</li>
+        <li>Multicultural Awareness</li>
+      </ul>
+  </div>
+<div class="section">
+  <h2>Useful Websites for Hotel Management Students</h2>
+  <ul>
+    <li><a href="https://www.ihmctan.edu.in/" target="_blank">IHMCTAN – Institute of Hotel Management, Catering & Nutrition</a></li>
+    <li><a href="https://www.hospitalitynet.org/" target="_blank">Hospitality Net – Industry News & Resources</a></li>
+    <li><a href="https://www.hosco.com/en" target="_blank">Hosco – Hospitality Jobs & Learning</a></li>
+    <li><a href="https://www.edx.org/learn/hospitality" target="_blank">edX – Free Hospitality & Hotel Management Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Hospitality and Management Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+     <ul>
+        <li>Hotel Manager</li>
+        <li>Restaurant Manager</li>
+        <li>Event Planner</li>
+        <li>Travel & Tourism Consultant</li>
+        <li>Resort Manager</li>
+        <li>Food & Beverage Director</li>
+        <li>Cruise Line Hospitality Staff</li>
+        <li>Airline Catering & In-flight Services</li>
+        <li>Entrepreneur in Hospitality Industry</li>
+      </ul>
+ </div>
+
+  <div class="section">
+    <h2>Best for students who</h2>
+    <ul>
+        <li>Enjoy interacting with people</li>
+        <li>Have strong communication skills</li>
+        <li>Like organizing events and services</li>
+        <li>Are creative and detail-oriented</li>
+        <li>Can handle stress and multitasking</li>
+      </ul>
+  </div>
+  <div class="section">
+    <h2>Hotel Management Might NOT Be Ideal If You</h2>
+      <ul>
+        <li>Do not like dealing with people daily</li>
+        <li>Dislike working long or irregular hours</li>
+        <li>Are not comfortable in fast-paced environments</li>
+      </ul>
+</div>
+ <div class="section">
+<h2>Hotel Management Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <ul>
+        <li>Bachelor of Hotel Management (BHM)</li>
+        <li>B.Sc. in Hospitality and Hotel Administration</li>
+        <li>Bachelor of Catering Technology</li>
+        <li>B.A. in Hotel and Tourism Management</li>
+      </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>Master of Hotel Management (MHM)</li>
+        <li>MBA in Hospitality Management</li>
+        <li>Postgraduate Diploma in Hotel Management</li>
+      </ul>
+
+      <p>Specialized Courses:</p>
+      <ul>
+        <li>Food & Beverage Service</li>
+        <li>Front Office & Housekeeping</li>
+        <li>Culinary Arts & Baking</li>
+        <li>Event Management</li>
+        <li>Resort & Spa Management</li>
+      </ul>
+
+  </div>
+</style>
+<!-- Add Font Awesome for icons in <head> -->
+<div class="section">
+  <h2>Hotel Management Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose any stream (Arts, Commerce, or Science)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Appear for Hotel Management entrance exams (like NCHMCT-JEE, AIMA UGAT, IIHM e-CHAT)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Under graduation
+      <small>Join BHM, B.Sc. Hotel Management, or Hospitality degree</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i><br>
+      Internships & Training
+      <small>Work in hotels, resorts, restaurants during studies</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Career Opportunities
+      <small>Hotels, Resorts, Airlines, Cruise, Tourism, Event Companies
+  </small>
+    </div>
+   </div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  /* Hover effects */
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  /* Arrow animation */
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<!-- Font Awesome link (only once in head) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

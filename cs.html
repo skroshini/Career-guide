@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer Science</title>
+ 
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+ <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <section class="section">
+      <h2>💻 Computer Science Stream</h2>
+      <p>
+Computer Science is the study of computers, programming, and digital systems. It focuses on how technology can solve real-world problems and make life easier. Students learn how software, applications, and networks are built and how they function behind the scenes.
+
+This stream is perfect for those who are logical thinkers, enjoy problem-solving, and are interested in how technology works.
+      </p>
+<div class="section">
+
+      <h3>1. Main Subjects</h3>
+<p> Studying these subjects in the Computer Science stream helps students understand how technology works and how to build it. Each subject teaches essential skills — from writing code and managing data to designing smart apps and protecting systems.
+ Whether you dream of becoming a software engineer, app developer, data analyst, or cybersecurity expert — these subjects lay the foundation for a strong and future-proof career.</p>
+      <ul>
+        <li>Programming Languages (C, Python, Java and etc...)</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Computer Networks</li>
+        <li>Operating Systems</li>
+        <li>Web and App Development</li>
+        <li>Database Management Systems</li>
+        <li>Artificial Intelligence, Cyber Security</li>
+        <li>Cyber Security</li>
+        <li>Cloud Computing</li>
+        <li>Software Engineering</li>
+   </ul>
+     </div>
+
+<div class="section">
+
+      <h3>2. Skills You Gain</h3>
+Learning Computer Science subjects gives you practical skills, problem-solving ability, and opens doors to high-demand careers in the tech world. You learn how to build apps, websites, manage data, and create smart solutions using technology. These subjects also boost your creativity, logic, and prepare you for future job roles like software developer, data scientist, or cybersecurity expert.\n
+
+In short, Computer Science helps you become a creator of technology and prepares you for a successful future in the digital world.
+
+
+      <ul>
+        <li>Problem-solving using technology</li>
+        <li>Software development and coding</li>
+        <li>Logical & analytical thinking</li>
+        <li>Understanding of networks, databases, and systems</li>
+      </ul>
+</div>
+  <div class="section">
+<h2>Useful Websites for gaining  skills </h2>
+<ul>
+  <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
+  <li><a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a></li>
+  <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+  <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+</ul>
+
+<style>
+  a {
+    color: rgb(38, 128, 184);              /* link color */
+    text-decoration: underline;  /* underlines the link */
+  }
+  a:hover {
+    color: rgb(34, 112, 138);          /* changes to darker blue when hovered */
+  }
+</style>
+</div>
+<div class="section">
+      <h3>3. Career Options</h3>
+<p> the career options/jobs will be:
+
+      <ul>
+        <li>Software Developer / Engineer – Build applications and software systems</li>
+
+<li>Web Developer – Create websites and web applications</li>
+
+<li>Mobile App Developer – Develop apps for Android or iOS</li>
+
+<li>Game Developer – Design and code video games</li>
+
+      <li>Data & Intelligence</li>
+<li>Data Scientist / Analyst – Analyze data to help businesses make decisions</li>
+
+<li>AI/ML Engineer – Build smart systems that learn from data</li>
+
+<li>Big Data Engineer – Work with large-scale data processing>/li>
+
+    <li>Security & Infrastructure</li>
+<li>Cybersecurity Analyst / Ethical Hacker – Protect systems from hackers and threats</li>
+
+<li>System Administrator – Manage and maintain computer systems and networks</li>
+
+<li>Cloud Engineer – Set up and manage cloud-based platforms (like AWS, Azure)</li>
+
+<li> Creative & Design</li>
+UI/UX Designer – Design user-friendly interfaces for websites and apps
+
+Multimedia Programmer – Combine graphics, sound, and code for interactive media
+
+<li>Management & Consulting</li>
+IT Consultant – Help companies use technology effectively
+
+Project Manager (Tech) – Manage tech teams and software projects
+
+<li>Academic & Research</li>
+Computer Science Lecturer / Teacher
+
+Tech Researcher / Scientis
+<li>Game Developer / UI-UX Designer</li>
+       </ul>
+</div>
+<div class="section">
+
+
+      <h3>4. Courses After 10th/12th</h3>
+      <ul>
+        <li>Diploma in Computer Engineering (after 10th)</li>
+        <li>B.Tech / B.E. in Computer Science</li>
+        <li>BCA (Bachelor of Computer Applications)</li>
+        <li>B.Sc in Computer Science</li>
+      </ul>
+</div>
+
+<div class="section">
+
+      <h3>5. Best for Students Who</h3>
+      <ul>
+        <li>Love technology and gadgets</li>
+        <li>Enjoy logic, math, and problem-solving</li>
+        <li>Have creative ideas and enjoy building new things</li>
+      </ul>
+</div>
+<div class="section">
+<h3>6.how to enter into this field ?..</h3>
+<p>You can start early by choosing diploma-level courses in technical education.
+
+<li>✅ Option 1:AFTER 10th</li><br>
+you can join in Diploma in Computer Engineering / IT (3 years)
+
+Offered by polytechnic colleges.<br>
+
+After completing diploma, you can:
+
+Get a job as a junior developer or technician
+
+OR join B.Tech/BE (Lateral Entry) into 2nd year
+<li>✅ Option 2:AFTER 12th</li>
+<p>Choose Science stream with Mathematics (PCM) in 11th and 12th for better opportunities.</p>
+Courses You Can Pursue:<br>
+->B.Tech / B.E. in Computer Science (4 years)<br>
+
+Most popular degree for software/tech careers
+
+Requires clearing entrance exams like JEE Main, state CETs, or private college tests<br>
+
+->BCA (Bachelor of Computer Applications) (3 years)<br>
+
+Suitable if you want to focus on software and applications<br>
+
+Entrance exam or direct admission in many colleges<br>
+
+->B.Sc in Computer Science / IT (3 years)<br>
+
+More academic/theoretical than BCA<br>
+
+Useful if you're planning higher studies or research<br>
+<li>✅ Option 3:Other Entry Paths
+Online Certifications (after 10th or 12th)<br>
+
+Platforms like Coursera, Udemy, or Google Certifications<br>
+
+Learn coding, app development, AI, etc.<br>
+
+Coding Bootcamps (short-term training)<br>
+
+Great for fast skill development and career switches<br>
+
+
+
+
+    </section>
+  </main>
+</body>
+</html>

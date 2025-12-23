@@ -1,0 +1,909 @@
+ <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+   <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</a></li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+        <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+
+<div class="section">
+  <h2>Real Estate </h2>
+  <p>Working in real estate means helping people buy, sell, rent, or manage properties such as homes, land, offices, and shops. A real estate professional can be an agent, broker, developer, property manager, or investment advisor, and the job usually involves networking, negotiation, market research, and financial planning.</p>
+</div>
+
+<div class="section">
+<div class="eee-section">
+  <h2>Key Areas of Real Estate</h2>
+  <p>(The main subjects and topics you will learn or work on in this field)</p>
+  
+  <div class="study-grid">
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-home"></i>
+          <h3>Real Estate Principles & Practices</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Basics of property markets, transactions, and ownership.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-balance-scale"></i>
+          <h3>Property Law & Regulations</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Contracts, property rights, taxation, and legal compliance.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-coins"></i>
+          <h3>Real Estate Finance & Investment</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Mortgages, loans, property funding, and investment analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-calculator"></i>
+          <h3>Property Valuation & Appraisals</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Methods to calculate the worth of land and buildings.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-city"></i>
+          <h3>Urban Planning & Development</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>City planning, smart cities, zoning, and infrastructure.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-hard-hat"></i>
+          <h3>Construction & Property Development</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Basics of design, construction, and project management.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Marketing & Sales in Real Estate</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Advertising, digital marketing, negotiation, and client relations.</p>
+        </div>
+      </div>
+    </div>
+   
+   <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-key"></i>
+          <h3>Property Management</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Maintenance, renting, leasing, and customer service.</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-leaf"></i>
+          <h3>Sustainable & Green Real Estate</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Eco-friendly housing and energy-efficient buildings.</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-laptop-house"></i>
+          <h3>PropTech & Digital Real Estate</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Using technology (AI, VR tours, blockchain, smart homes).</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<style>
+/* Flip Card Grid */
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  perspective: 1000px;
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Front styling */
+.flip-card-front {
+  background-color: rgba(255,255,255,0.08);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.flip-card-front i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.flip-card-front:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+  border-color: #ffcc00;
+}
+
+.flip-card-front:hover i {
+  transform: rotate(360deg) scale(1.2);
+  color: #ffd633;
+}
+
+/* Back styling */
+.flip-card-back {
+  background-color: #1e1e2f;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  line-height: 1.4;
+}
+</style>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</div>
+
+<div class="eee-section">
+  <h2>Career options </h2>
+  <p>(Click a card to view details)</p>
+
+  <div class="career-grid">
+    
+    <!-- Real Estate Agent / Broker -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-handshake"></i>
+          <h3>Real Estate Agent / Broker</h3>
+        </div>
+        <div class="card-back">
+          <h4>Real Estate Agent / Broker</h4>
+          <p><strong>Helping clients buy, sell, or rent properties.</strong></p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Property Manager -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-key"></i>
+          <h3>Property Manager</h3>
+        </div>
+        <div class="card-back">
+          <h4>Property Manager</h4>
+          <p><strong>Managing rental properties, tenants, and maintenance.</strong> .</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Estate Appraiser / Valuer -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-calculator"></i>
+          <h3>Real Estate Appraiser / Valuer</h3>
+        </div>
+        <div class="card-back">
+          <h4>Real Estate Appraiser / Valuer</h4>
+          <p><strong>Assessing property value for sales or loans.</strong> </p>
+                </div>
+      </div>
+    </div>
+
+    <!-- Real Estate Developer -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-building"></i>
+          <h3>Real Estate Developer</h3>
+        </div>
+        <div class="card-back">
+          <h4>Real Estate Developer</h4>
+          <p><strong>Planning and building residential or commercial projects.</strong></p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Urban Planner -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-city"></i>
+          <h3>Urban Planner</h3>
+        </div>
+        <div class="card-back">
+          <h4>Urban Planner</h4>
+          <p><strong>Designing sustainable cities, zoning, and infrastructure.</strong> </p>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- more options -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-list"></i>
+          <h3>More Options</h3>
+        </div>
+        <div class="card-back">
+          <h4>More Options</h4>
+          <p><strong>Real Estate Investment Analyst, Construction Project Manager, Corporate Real Estate Manager, Sustainable Housing Specialist, PropTech Specialist.</strong> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+body {
+  background: #0a0f1f;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.career-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  box-shadow: 0 0 15px rgba(0,255,255,0.4);
+  animation: glowPulse 4s infinite alternate;
+}
+
+/* Hover tilt effect */
+.career-card:hover .card-inner {
+  transform: rotateY(10deg) rotateX(5deg);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.5);
+}
+
+/* Flip on active */
+.career-card.active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Front */
+.card-front {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-size: 18px;
+}
+
+.card-front i {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+/* Back */
+.card-back {
+  background: linear-gradient(135deg, #00ccff, #0d0d0d);
+  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+/* Glow animation */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px #131313, 0 0 20px #ff00ff; }
+  50% { box-shadow: 0 0 25px #00ff99, 0 0 35px #ff0066; }
+  100% { box-shadow: 0 0 15px #00ccff, 0 0 30px #ff33ff; }
+}
+</style>
+
+<script>
+// Toggle flip on click
+document.querySelectorAll('.career-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="section">
+  <h2>Skills You Will Gain</h2>
+  
+
+  <ul>
+    <li><strong>Communication & Negotiation</strong> </li>
+    <li><strong>Market Research & Analysis</strong> </li>
+    <li><strong>Financial Literacy</strong> </li>
+    <li><strong>Legal Awareness</strong> </li>
+    <li><strong>Property Valuation</strong> </li>
+    <li><strong>Project & Time Management</strong> </li>
+    <li><strong>Networking & Relationship-Building</strong> </li>
+    <li><strong>Technology Skills (PropTech)</strong> </li>
+    <li><strong>Urban Planning Knowledge</strong> </li>
+    <li><strong>Problem-Solving & Critical Thinking</strong> </li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Useful Websites for Real Estate Careers</h2>
+  <ul>
+    <li><a href="https://www.nar.realtor/" target="_blank">NAR – National Association of Realtors</a></li>
+    <li><a href="https://www.realtor.com/" target="_blank">Realtor.com – Real Estate Listings & Resources</a></li>
+    <li><a href="https://www.zillow.com/" target="_blank">Zillow – Real Estate Market Data & Analysis</a></li>
+    <li><a href="https://www.edx.org/learn/real-estate" target="_blank">edX – Free Real Estate Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Real Estate and Property Management Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<!-- Courses in Real Estate -->
+<div class="eee-section">
+ <h1>Undergraduate (UG) Courses</h1>
+   
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-university"></i>
+           <p> <h3>BBA in Real Estate & Urban Infrastructure</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-dollar"></i>
+      <p><h3>B.Com (Real Estate Management)</h3></p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-drafting-compass"></i>
+           <p> <h3>B.Arch (Architecture with Real Estate focus)</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-ruler-combined"></i>
+           <p> <h3>B.Tech / B.E. in Civil Engineering (Real Estate Specialization)</h3>
+</p>
+    </div>
+</div>
+
+<div class="eee-section">  
+  <h1>Postgraduate (PG) Courses</h1>
+   
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-briefcase"></i>
+           <p> <h3>MBA in Real Estate & Urban Infrastructure</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-city"></i>
+      <p><h3>M.Plan (Urban Planning)</h3></p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-chart-line"></i>
+           <p> <h3>M.Sc. in Real Estate Economics & Finance</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-graduation-cap"></i>
+           <p> <h3>PG Diploma in Real Estate Management</h3>
+</p>
+    </div>
+   </div>
+      
+ <div class="eee-section">
+  <h1>Diploma & Certification Courses</h1>
+   
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-balance-scale"></i>
+           <p> <h3>Diploma in Property Valuation</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-bullhorn"></i>
+      <p><h3>Certification in Real Estate Marketing & Sales</h3></p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-leaf"></i>
+           <p> <h3>Certification in Sustainable Real Estate</h3>
+</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-laptop-house"></i>
+           <p> <h3>Certification in PropTech & Digital Real Estate</h3>
+</p>
+    </div>
+
+     </div>
+</div>
+
+<style>
+/* Same styles as previous EEE section for consistency */
+.eee-section {
+  background: linear-gradient(90deg, #0d2d4c, #3e1b6e);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.eee-section h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.eee-section p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Grid Layout */
+.eee-section .study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Box Styling */
+.eee-section .study-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eee-section .study-box i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.eee-section .study-box h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.eee-section .study-box p {
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* Hover Animation */
+.eee-section .study-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+  border-color: #ffcc00;
+}
+
+.eee-section .study-box:hover i {
+  transform: rotate(360deg) scale(1.2);
+  color: #ffd633;
+}
+</style>
+
+<!-- Font Awesome (if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<div class="section">
+  <h2>Best For Students Who</h2>
+
+  <ul>
+    <li>Enjoy working with people</li>
+    <li>Have an interest in business & finance</li>
+    <li>Are curious about law & regulations</li>
+    <li>Are fascinated by cities & buildings</li>
+    <li>Think entrepreneurially</li>
+    <li>Care about sustainability</li>
+    <li>Like technology</li>
+    <li>Enjoy problem-solving</li>
+
+
+  </ul>
+</div>
+
+<!-- HOW TO GET INTO INDUSTRIAL FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>Career path flow chart</h2>
+  <div class="flowchart-vertical">
+    
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+       After 10th
+      <p><small>Choose any stream, Commerce preferred.</small></p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      After 12th
+      <p><small>Entrance Exams (depending on course):
+        <ul>
+        <li>CUET → For BBA / B.Com (Real Estate, Management)</li>
+        <li>NATA / JEE Paper 2 → For B.Arch (Architecture)  </li>
+        <li>JEE Main / State Engg. Entrance → For B.Tech (Civil / Construction)</li>
+        <li>Direct Admission / Merit → For some Diploma & UG Courses </li>
+        </ul></small></p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+       Undergraduation
+       <p><small>BBA in Real Estate & Urban Infrastructure, B.Com (Real Estate Management), B.Arch (Architecture with Real Estate focus), B.Tech (Civil Engineering – Real Estate Specialization)</small></p>
+         </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i>
+       Postgraduation
+      <p><small>MBA in Real Estate, M.Plan (Urban Planning), M.Sc. in Real Estate Economics & Finance, PG Diploma in Real Estate</small></p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-industry"></i>
+       Careers in Real Estate
+       <p><small>Real Estate Agent / Broker, Property Manager, Appraiser / Valuer, Developer / Project Manager, Urban Planner, Investment Analyst, PropTech Specialist, Sustainable Housing Expert</small></p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+.flowchart-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-step i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 6px;
+}
+
+.flow-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+  border-color: #ffcc00;
+}
+
+.flow-arrow {
+  font-size: 24px;
+  color: #ffcc00;
+}
+</style>
+
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </main>
+</body>
+</html>

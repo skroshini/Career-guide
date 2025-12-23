@@ -1,0 +1,711 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Guide - After 10th</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #052c50;
+      color: white;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar ul li {
+      padding: 10px 15px;
+      border-bottom: 1px solid #003566;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .sidebar ul li:hover {
+      background-color: #003566;
+    }
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column; /* stack navbar + content */
+    }
+    .navbar, .menu-bar {
+      background-color: #052c50;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar nav a, .menu-bar a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .navbar nav a:hover, .menu-bar a:hover {
+      color: #f39c12;
+    }
+
+    .content {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      color: #00ffff;
+      border: 1px solid #00ffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff80;
+      max-width: 800px;
+      margin: auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #f1f2f5;
+    }
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5dfeb;
+      border-radius: 5px;
+    }
+    .form-group select[multiple] {
+      height: auto;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background-color: #1f2f9d;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .submit-btn:hover {
+      background-color: #80d8ee83; 
+    }
+
+    #suggestionBox {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid gold;
+      border-radius: 12px;
+      background: #fffbe6;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #052c50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* Scrollbar styling */
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="miniform.html"><strong>Miniform</strong></a></li>
+    </ul>
+    <h2>Career Fields</h2>
+    <nav>
+      <ul>
+        <li><a href="after10th.html">What to do after 10th?</a></li>
+        <li><a href="cs.html">Computer Science</a></li>
+        <li><a href="me.html">Mechanical</a></li>
+        <li><a href="eee.html">Electrical</a></li>
+        <li><a href="cv.html">Civil</a></li>
+        <li><a href="ec.html">Electronics</a></li>
+        <li><a href="bm.html">Biomedical</a></li>
+        <li><a href="as.html">Aerospace</a></li>
+        <li><a href="chem.html">Chemical</a></li>
+        <li><a href="envi.html">Environmental</a></li>
+        <li><a href="id.html">Industrial</a></li>
+        <li><a href="st.html">Software</a></li>
+        <li><a href="rob.html">Robotics</a></li>
+        <li><a href="mf.html">Medical Fields</a></li>
+        <li><a href="law.html">Law</a></li>
+        <li><a href="literature.html">Literature</a></li>
+        <li><a href="hm.html">Hotel Management</a></li>
+        <li><a href="tf.html">Teaching Fields</a></li>
+        <li><a href="baf.html">Business and Finance</a></li>
+        <li><a href="re.html">Real Estate</a></li>
+        <li><a href="sat.html">Science and Technology</a></li>
+        <li><a href="arts.html">Arts</a></li>
+        <li><a href="dam.html">Design and Media</a></li>
+        <li><a href="gae.html">Gaming and Esports</a></li>
+        <li><a href="gapa.html">Government and Public Administration</a></li>
+        <li><a href="t.html">Travel</a></li>
+        <li><a href="tah.html">Tourism and Hospitality</a></li>
+        <li><a href="sam.html">Sales and Management</a></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <div class="menu-bar">
+      <a href="homepage.html">Home</a>
+    </div>
+
+    <div class="content">
+      <div class="form-container" id="form">
+        <h2>User Details</h2>
+        <form id="careerForm">
+          <div class="form-group">
+            <label for="habits">Habits:</label>
+            <select id="habits" name="habits" multiple>
+              <option value="Drawing">Drawing</option>
+              <option value="Painting">Painting</option>
+              <option value="Dancing">Dancing</option>
+              <option value="Writing">Writing</option>
+              <option value="Designing">Designing</option>
+              <option value="Photography">Photography</option>
+              <option value="Video editing">Video editing</option>
+              <option value="Playing a musical instrument">Playing a musical instrument</option>
+              <option value="DIY or crafting">DIY or crafting</option>
+              <option value="Reading books">Reading books</option>
+              <option value="Watching educational videos">Watching educational videos</option>
+              <option value="Listening to podcasts">Listening to podcasts</option>
+              <option value="Researching topics online">Researching topics online</option>
+              <option value="Learning new languages">Learning new languages</option>
+              <option value="Exploring new tech/tools">Exploring new tech/tools</option>
+              <option value="Coding or programming">Coding or programming</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Creating content">Creating content</option>
+              <option value="Blogging">Blogging</option>
+              <option value="App or web designing">App or web designing</option>
+              <option value="Building digital products">Building digital products</option>
+              <option value="Exercising">Exercising</option>
+              <option value="Meditation">Meditation</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Volunteering">Volunteering</option>
+              <option value="Mentoring">Mentoring</option>
+              <option value="Organizing events">Organizing events</option>
+              <option value="Public speaking">Public speaking</option>
+              <option value="Team sports">Team sports</option>
+              
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="interests">Interests:</label>
+            <select id="interests" name="interests" multiple>
+              <option value="Work at one place (desk job)">Work at one place (desk job)</option>
+              <option value="Work from home">Work from home</option>
+              <option value="Move around while working">Move around while working</option>
+              <option value="Travel for work">Travel for work</option>
+              <option value="Work outdoors">Work outdoors</option>
+              <option value="Work with people">Work with people</option>
+              <option value="Meet new people regularly">Meet new people regularly</option>
+              <option value="Mix of indoor and outdoor work">Mix of indoor and outdoor work</option>
+              <option value="Flexible timing">Flexible timing</option>
+              <option value="Hands-on/manual work">Hands-on/manual work</option>
+              <option value="Digital/online work">Digital/online work</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <!-- Suggestion Box -->
+        <div id="suggestionBox"></div>
+      </div>
+    </div>
+  </div>
+<script>
+  const form = document.getElementById("careerForm");
+  const suggestionBox = document.getElementById("suggestionBox");
+
+  const suggestions = {
+    "Drawing": {
+      "Work at one place (desk job)": "Graphic Designer, Illustrator, Animator",
+      "Work from home": "Freelance Illustrator, Digital Artist",
+      "Move around while working": "Interior Designer, Architect",
+      "Travel for work": "Travel Sketch Artist, Art Journalist",
+      "Work outdoors": "Landscape Artist, Mural Painter",
+      "Work with people": "Art Teacher, Creative Workshop Organizer",
+      "Meet new people regularly": "Art Event Coordinator, Comic Convention Artist",
+      "Mix of indoor and outdoor work": "Set Designer, Street Artist",
+      "Flexible timing": "Freelance Graphic Artist, Tattoo Designer",
+      "Hands-on/manual work": "Sculptor, Industrial Designer",
+      "Digital/online work": "Digital Illustrator, Game Asset Designer",
+    },
+
+    "Painting": {
+      "Work at one place (desk job)": "Art Restorer, Art Director",
+      "Work from home": "Freelance Painter, Commission Artist",
+      "Move around while working": "Mural Artist, Exhibition Painter",
+      "Travel for work": "Art Exhibitor, Traveling Fine Artist",
+      "Work outdoors": "Landscape Painter, Street Painter",
+      "Work with people": "Art Teacher, Painting Workshop Instructor",
+      "Meet new people regularly": "Gallery Manager, Art Fair Exhibitor",
+      "Mix of indoor and outdoor work": "Set Painter, Theme Park Artist",
+      "Flexible timing": "Freelance Fine Artist, Custom Painter",
+      "Hands-on/manual work": "Wall Painter, Decorative Artist",
+      "Digital/online work": "Digital Painter, Concept Artist",
+    },
+
+"Dancing": {
+  "Work at one place (desk job)": "Choreographer, Dance Instructor",
+  "Work from home": "Online Dance Classes, Dance Content Creator",
+  "Move around while working": "Professional Dancer, Dance Performer",
+  "Travel for work": "Touring Dancer, Dance Workshop Trainer",
+  "Work outdoors": "Street Performer, Cultural Festival Dancer",
+  "Work with people": "Dance Team Coach, Community Dance Instructor",
+  "Meet new people regularly": "Dance Event Organizer, Flash Mob Coordinator",
+  "Mix of indoor and outdoor work": "Dance Trainer, Studio & Outdoor Performer",
+  "Flexible timing": "Freelance Choreographer, Dance YouTuber",
+  "Hands-on/manual work": "Dance Troupe Performer, Classical Dance Specialist",
+  "Digital/online work": "Dance App Instructor, Online Dance Course Creator"
+},
+
+
+    "Writing": {
+      "Work at one place (desk job)": "Journalist, Editor, Technical Writer",
+      "Work from home": "Freelance Writer, Blogger",
+      "Move around while working": "Travel Writer, Field Journalist",
+      "Travel for work": "Foreign Correspondent, Travel Blogger",
+      "Work outdoors": "Field Reporter, Nature Writer",
+      "Work with people": "Scriptwriter, Communication Specialist",
+      "Meet new people regularly": "Interview Journalist, Event Reporter",
+      "Mix of indoor and outdoor work": "Documentary Writer, Content Creator",
+      "Flexible timing": "Freelance Author, Blogger",
+      "Hands-on/manual work": "Copywriter for Ads, Script Supervisor",
+      "Digital/online work": "Content Writer, Social Media Writer",
+    },
+
+    "Designing": {
+      "Work at one place (desk job)": "UI/UX Designer, Fashion Designer",
+      "Work from home": "Freelance Web Designer, Freelance Fashion Consultant",
+      "Move around while working": "Interior Designer, Event Designer",
+      "Travel for work": "Fashion Stylist, Industrial Designer",
+      "Work outdoors": "Landscape Designer, Exhibition Designer",
+      "Work with people": "Product Designer, Design Thinking Coach",
+      "Meet new people regularly": "Fashion Show Coordinator, Exhibition Designer",
+      "Mix of indoor and outdoor work": "Set Designer, Retail Designer",
+      "Flexible timing": "Freelance Designer, Personal Stylist",
+      "Hands-on/manual work": "Furniture Designer, Craft Designer",
+      "Digital/online work": "Graphic Designer, Web Designer",
+    },
+
+    "Photography": {
+      "Work at one place (desk job)": "Photo Editor, Studio Photographer",
+      "Work from home": "Freelance Photographer, Stock Photographer",
+      "Move around while working": "Wedding Photographer, Wildlife Photographer",
+      "Travel for work": "Travel Photographer, Photojournalist",
+      "Work outdoors": "Nature Photographer, Sports Photographer",
+      "Work with people": "Portrait Photographer, Event Photographer",
+      "Meet new people regularly": "Fashion Photographer, Media Photographer",
+      "Mix of indoor and outdoor work": "Documentary Photographer, Freelance Shooter",
+      "Flexible timing": "Freelance Event Photographer, Blogger Photographer",
+      "Hands-on/manual work": "Darkroom Developer, Camera Technician",
+      "Digital/online work": "Photo Editor, Digital Content Creator",
+    },
+
+   
+
+"Reading books": {
+  "Work at one place (desk job)": "Author, Editor, Researcher",
+  "Work from home": "Freelance Writer, Blogger",
+  "Move around while working": "Book Reviewer, Literary Tour Guide",
+  "Travel for work": "Book Event Organizer, Conference Speaker",
+  "Work outdoors": "Literary Festival Organizer, Reading Coach",
+  "Work with people": "Teacher, Librarian",
+  "Meet new people regularly": "Public Speaking, Author Events",
+  "Mix of indoor and outdoor work": "Workshop Leader, Book Club Organizer",
+  "Flexible timing": "Freelance Content Writer, Online Instructor",
+  "Hands-on/manual work": "Bookbinding, Publishing Assistant",
+  "Digital/online work": "Online Author, eBook Writer"
+},
+
+
+"Watching Educational Videos": {
+  "Work at one place (desk job)": "Research Assistant, Content Developer",
+  "Work from home": "Online Course Creator, Content Reviewer",
+  "Move around while working": "Workshop Trainer, Learning Coach",
+  "Travel for work": "Conference Speaker, EdTech Presenter",
+  "Work outdoors": "Field Educator, Training Specialist",
+  "Work with people": "Teacher, Motivational Speaker",
+  "Meet new people regularly": "Seminar Host, Event Speaker",
+  "Mix of indoor and outdoor work": "Corporate Trainer, Research Scholar",
+  "Flexible timing": "Freelance Educator, Online Instructor",
+  "Hands-on/manual work": "Lab Assistant, Technical Demonstrator",
+  "Digital/online work": "YouTuber (Education), Online Tutor",
+},
+
+"Listening to Podcasts": {
+  "Work at one place (desk job)": "Content Strategist, Research Writer",
+  "Work from home": "Podcast Host, Podcast Editor",
+  "Move around while working": "Interview Podcaster, Journalist",
+  "Travel for work": "Documentary Podcaster, Media Host",
+  "Work outdoors": "Street Reporter, Field Interviewer",
+  "Work with people": "Radio Host, Communication Coach",
+  "Meet new people regularly": "Talk Show Host, Panel Moderator",
+  "Mix of indoor and outdoor work": "Event Podcaster, Conference Podcaster",
+  "Flexible timing": "Freelance Podcaster, Independent Host",
+  "Hands-on/manual work": "Audio Technician, Podcast Equipment Operator",
+  "Digital/online work": "Online Podcaster, Social Media Podcaster",
+},
+
+"Playing a musical instrument": {
+  "Work at one place (desk job)": "Music Teacher, Composer",
+  "Work from home": "Online Music Instructor, Freelance Composer",
+  "Move around while working": "Touring Musician, Street Performer",
+  "Travel for work": "Concert Artist, Band Member",
+  "Work outdoors": "Festival Performer, Street Musician",
+  "Work with people": "Band Member, Choir Director",
+  "Meet new people regularly": "Tour Manager, Live Performer",
+  "Mix of indoor and outdoor work": "Session Musician, Event Performer",
+  "Flexible timing": "Freelance Musician, Private Tutor",
+  "Hands-on/manual work": "Instrument Maker, Sound Engineer",
+  "Digital/online work": "Music Producer, Online Performer",
+},
+
+"Exploring new tech/tools": {
+  "Work at one place (desk job)": "Tech Analyst, Hardware Specialist",
+  "Work from home": "Tech Blogger, Freelance Tester",
+  "Move around while working": "IT Field Technician, Hardware Consultant",
+  "Travel for work": "Tech Demo Specialist, International Tech Trainer",
+  "Work outdoors": "Telecom Field Engineer, Tech Setup Specialist",
+  "Work with people": "Tech Consultant, Corporate Trainer",
+  "Meet new people regularly": "Tech Evangelist, Product Demonstrator",
+  "Mix of indoor and outdoor work": "Robotics Technician, IoT Specialist",
+  "Flexible timing": "Freelance Tech Support, Gadget Reviewer",
+  "Hands-on/manual work": "Electronics Repair Specialist, Prototype Builder",
+  "Digital/online work": "YouTuber (Tech), Software Reviewer",
+},
+
+"Coding or programming": {
+  "Work at one place (desk job)": "Software Developer, Data Analyst",
+  "Work from home": "Freelance Web/App Developer, Remote Programmer",
+  "Move around while working": "Field IT Engineer, Robotics Developer",
+  "Travel for work": "IT Consultant, Cybersecurity Specialist",
+  "Work outdoors": "IoT Developer, Drone Programmer",
+  "Work with people": "Project Manager, Tech Team Lead",
+  "Meet new people regularly": "Tech Trainer, Startup Founder",
+  "Mix of indoor and outdoor work": "Embedded Systems Engineer, AI Developer",
+  "Flexible timing": "Freelance Programmer, Game Developer",
+  "Hands-on/manual work": "Hardware Programmer, Robotics Coder",
+  "Digital/online work": "AI Engineer, Cloud Developer",
+},
+
+"Gaming": {
+  "Work at one place (desk job)": "Game Tester, Level Designer",
+  "Work from home": "Streamer, Indie Game Developer",
+  "Move around while working": "Event Gamer, Esports Manager",
+  "Travel for work": "Esports Athlete, Gaming Journalist",
+  "Work outdoors": "AR/VR Developer, Outdoor Gaming Event Organizer",
+  "Work with people": "Game Coach, Esports Analyst",
+  "Meet new people regularly": "Convention Host, Esports Commentator",
+  "Mix of indoor and outdoor work": "VR Designer, Game Event Organizer",
+  "Flexible timing": "Pro Gamer, Gaming Streamer",
+  "Hands-on/manual work": "Arcade Technician, Game Hardware Specialist",
+  "Digital/online work": "Game Developer, Online Streamer",
+},
+
+"Creating content": {
+  "Work at one place (desk job)": "Content Writer, Social Media Manager",
+  "Work from home": "Freelance Blogger, YouTuber",
+  "Move around while working": "Vlogger, Travel Content Creator",
+  "Travel for work": "Travel Blogger, Influencer",
+  "Work outdoors": "Documentary Creator, Lifestyle Vlogger",
+  "Work with people": "Podcast Host, Event Host",
+  "Meet new people regularly": "Influencer, Content Strategist",
+  "Mix of indoor and outdoor work": "Journalist, Digital Nomad",
+  "Flexible timing": "Freelancer, Independent Creator",
+  "Hands-on/manual work": "Photographer, Videographer",
+  "Digital/online work": "YouTuber, Social Media Influencer",
+},
+
+"Blogging": {
+  "Work at one place (desk job)": "Content Strategist, Copywriter",
+  "Work from home": "Freelance Blogger, Niche Writer",
+  "Move around while working": "Travel Blogger, Lifestyle Blogger",
+  "Travel for work": "Tourism Blogger, International Columnist",
+  "Work outdoors": "Adventure Blogger, Wildlife Blogger",
+  "Work with people": "Community Blogger, Interview Writer",
+  "Meet new people regularly": "Event Blogger, Journalist",
+  "Mix of indoor and outdoor work": "Photo Blogger, Multimedia Journalist",
+  "Flexible timing": "Freelance Writer, Ghostwriter",
+  "Hands-on/manual work": "DIY Blogger, Product Reviewer",
+  "Digital/online work": "SEO Blogger, Tech Blogger",
+},
+
+"App or web designing": {
+  "Work at one place (desk job)": "UI/UX Designer, Web Designer",
+  "Work from home": "Freelance App Designer, Remote Web Developer",
+  "Move around while working": "IT Consultant, Design Trainer",
+  "Travel for work": "Tech Conference Designer, Startup Consultant",
+  "Work outdoors": "AR/VR Designer, Smart City App Developer",
+  "Work with people": "Design Team Lead, UX Researcher",
+  "Meet new people regularly": "Startup Designer, Design Workshop Speaker",
+  "Mix of indoor and outdoor work": "Mobile App Developer, Frontend Developer",
+  "Flexible timing": "Freelance Web/App Designer, Graphic Designer",
+  "Hands-on/manual work": "Prototype Designer, Interactive Kiosk Developer",
+  "Digital/online work": "Web Developer, App Developer",
+},
+
+"Building digital products": {
+  "Work at one place (desk job)": "Product Designer, Software Engineer",
+  "Work from home": "Freelance App Builder, Startup Founder",
+  "Move around while working": "IoT Developer, Tech Consultant",
+  "Travel for work": "Tech Sales Engineer, Product Evangelist",
+  "Work outdoors": "Drone App Developer, Robotics Programmer",
+  "Work with people": "Product Manager, Tech Startup Team Lead",
+  "Meet new people regularly": "Entrepreneur, Tech Event Speaker",
+  "Mix of indoor and outdoor work": "Smart Device Developer, AR/VR Builder",
+  "Flexible timing": "Freelancer, Independent Developer",
+  "Hands-on/manual work": "Prototype Builder, Hardware Developer",
+  "Digital/online work": "App Developer, SaaS Developer",
+},
+
+"Exercising": {
+  "Work at one place (desk job)": "Fitness Content Creator, Sports Analyst",
+  "Work from home": "Online Fitness Coach, Yoga Instructor",
+  "Move around while working": "Personal Trainer, Physiotherapist",
+  "Travel for work": "Sports Scientist, Athlete",
+  "Work outdoors": "Sports Coach, Adventure Trainer",
+  "Work with people": "Gym Instructor, Group Fitness Trainer",
+  "Meet new people regularly": "Event Trainer, Sports Organizer",
+  "Mix of indoor and outdoor work": "Rehab Specialist, Wellness Coach",
+  "Flexible timing": "Freelance Trainer, Fitness YouTuber",
+  "Hands-on/manual work": "Sports Therapist, Physical Therapist",
+  "Digital/online work": "Online Fitness App Coach, Health Influencer",
+},
+
+"Meditation": {
+  "Work at one place (desk job)": "Wellness Writer, Mindfulness Coach",
+  "Work from home": "Online Meditation Instructor, Wellness Podcaster",
+  "Move around while working": "Retreat Guide, Spiritual Teacher",
+  "Travel for work": "International Wellness Retreat Leader, Speaker",
+  "Work outdoors": "Yoga Retreat Leader, Nature Meditation Coach",
+  "Work with people": "Therapist, Group Meditation Coach",
+  "Meet new people regularly": "Retreat Organizer, Mindfulness Event Speaker",
+  "Mix of indoor and outdoor work": "Wellness Trainer, Lifestyle Coach",
+  "Flexible timing": "Freelance Coach, Wellness Blogger",
+  "Hands-on/manual work": "Massage Therapist, Reiki Practitioner",
+  "Digital/online work": "Meditation App Developer, Wellness YouTuber",
+},
+
+"Cooking": {
+  "Work at one place (desk job)": "Culinary Instructor, Recipe Developer",
+  "Work from home": "Food Blogger, Home-based Caterer",
+  "Move around while working": "Personal Chef, Catering Service",
+  "Travel for work": "Food Critic, Culinary Tour Guide",
+  "Work outdoors": "Street Food Vendor, Outdoor Catering",
+  "Work with people": "Restaurant Chef, Team Kitchen Leader",
+  "Meet new people regularly": "Food Festival Chef, Cooking Workshop Host",
+  "Mix of indoor and outdoor work": "Farm-to-Table Chef, Culinary Demonstrator",
+  "Flexible timing": "Freelance Chef, Cooking Content Creator",
+  "Hands-on/manual work": "Baker, Pastry Chef",
+  "Digital/online work": "YouTube Cooking Channel, Online Recipe Creator",
+},
+
+"Gardening": {
+  "Work at one place (desk job)": "Landscape Designer, Horticulture Planner",
+  "Work from home": "Plant Blogger, Online Gardening Consultant",
+  "Move around while working": "Nursery Manager, Garden Consultant",
+  "Travel for work": "Botanical Researcher, Travel Horticulturist",
+  "Work outdoors": "Gardener, Urban Farmer",
+  "Work with people": "Community Garden Coordinator, Gardening Workshop Leader",
+  "Meet new people regularly": "Event Gardener, Botanical Tour Guide",
+  "Mix of indoor and outdoor work": "Greenhouse Manager, Landscaping Specialist",
+  "Flexible timing": "Freelance Gardener, Plant Consultant",
+  "Hands-on/manual work": "Plant Care Specialist, Floriculturist",
+  "Digital/online work": "Gardening YouTuber, Plant Blogger",
+},
+
+"Volunteering": {
+  "Work at one place (desk job)": "NGO Coordinator, Program Planner",
+  "Work from home": "Online Campaign Manager, Fundraiser",
+  "Move around while working": "Community Volunteer, Field Organizer",
+  "Travel for work": "Humanitarian Aid Worker, NGO Field Officer",
+  "Work outdoors": "Social Worker, Awareness Campaigner",
+  "Work with people": "Volunteer Manager, Event Coordinator",
+  "Meet new people regularly": "Outreach Specialist, Public Relations Volunteer",
+  "Mix of indoor and outdoor work": "Community Organizer, Event Volunteer",
+  "Flexible timing": "Freelance NGO Consultant, Online Advocate",
+  "Hands-on/manual work": "Field Volunteer, Relief Worker",
+  "Digital/online work": "Social Media Campaigner, Virtual Volunteer",
+},
+
+"Mentoring": {
+  "Work at one place (desk job)": "School Counselor, Corporate Mentor",
+  "Work from home": "Online Coach, Virtual Tutor",
+  "Move around while working": "Mentorship Program Coordinator, Workshop Leader",
+  "Travel for work": "Conference Mentor, International Trainer",
+  "Work outdoors": "Community Mentor, Outdoor Training Facilitator",
+  "Work with people": "Corporate Trainer, Career Coach",
+  "Meet new people regularly": "Mentorship Event Organizer, Networking Coach",
+  "Mix of indoor and outdoor work": "Youth Program Leader, Leadership Coach",
+  "Flexible timing": "Freelance Mentor, Online Instructor",
+  "Hands-on/manual work": "Skill Trainer, Practical Workshop Coach",
+  "Digital/online work": "Online Mentorship Platform, E-learning Instructor",
+},
+
+"Organizing events": {
+  "Work at one place (desk job)": "Event Coordinator, Conference Planner",
+  "Work from home": "Virtual Event Planner, Online Workshop Host",
+  "Move around while working": "Event Manager, Wedding Planner",
+  "Travel for work": "Tourism Event Organizer, Event Consultant",
+  "Work outdoors": "Festival Organizer, Public Event Planner",
+  "Work with people": "Corporate Event Manager, Team Leader",
+  "Meet new people regularly": "Networking Event Host, Social Event Planner",
+  "Mix of indoor and outdoor work": "Trade Show Organizer, Exhibition Coordinator",
+  "Flexible timing": "Freelance Event Planner, Pop-up Event Organizer",
+  "Hands-on/manual work": "Setup Crew Supervisor, Production Manager",
+  "Digital/online work": "Webinar Organizer, Live Streaming Event Manager",
+},
+
+"Public speaking": {
+  "Work at one place (desk job)": "Lecturer, Trainer",
+  "Work from home": "Webinar Host, Online Coach",
+  "Move around while working": "Conference Speaker, Workshop Facilitator",
+  "Travel for work": "Motivational Speaker, Corporate Speaker",
+  "Work outdoors": "Field Presenter, Rally Speaker",
+  "Work with people": "Debate Coach, Toastmasters Trainer",
+  "Meet new people regularly": "Event Speaker, Guest Lecturer",
+  "Mix of indoor and outdoor work": "Trainer, Seminar Facilitator",
+  "Flexible timing": "Freelance Speaker, Online Course Instructor",
+  "Hands-on/manual work": "Demonstration Trainer, Facilitator",
+  "Digital/online work": "YouTube Educator, Online Motivational Speaker",
+},
+
+"Team sports": {
+  "Work at one place (desk job)": "Sports Analyst, Coach",
+  "Work from home": "Online Sports Coach, eSports Team Manager",
+  "Move around while working": "Team Trainer, Fitness Coach",
+  "Travel for work": "Athlete, Sports Tournament Participant",
+  "Work outdoors": "Coach, Outdoor Sports Instructor",
+  "Work with people": "Sports Manager, Team Leader",
+  "Meet new people regularly": "Tournament Coordinator, Sports Event Organizer",
+  "Mix of indoor and outdoor work": "Physical Trainer, Recreation Manager",
+  "Flexible timing": "Freelance Coach, Sports Blogger",
+  "Hands-on/manual work": "Athlete, Physical Therapist",
+  "Digital/online work": "eSports Coach, Online Fitness Trainer",
+},
+
+"Video editing": {
+  "Work at one place (desk job)": "Post-production Editor, Film Editor",
+  "Work from home": "Freelance Video Editor, YouTube Editor",
+  "Move around while working": "Event Video Editor, On-location Editor",
+  "Travel for work": "Videographer, Documentary Editor",
+  "Work outdoors": "Sports or Travel Videographer, Field Video Editor",
+  "Work with people": "Corporate Video Editor, Team Project Editor",
+  "Meet new people regularly": "Media Coordinator, Video Workshop Trainer",
+  "Mix of indoor and outdoor work": "Freelance Videographer, Film Crew Editor",
+  "Flexible timing": "Content Creator, Online Course Video Editor",
+  "Hands-on/manual work": "Camera Operator, Editing Assistant",
+  "Digital/online work": "YouTube Content Editor, Online Video Specialist"
+},
+
+"DIY or crafting": {
+  "Work at one place (desk job)": "Product Designer, Workshop Instructor",
+  "Work from home": "Handmade Product Seller, Online Craft Instructor",
+  "Move around while working": "Artisan, Craft Market Vendor",
+  "Travel for work": "Craft Workshop Trainer, Event Stall Manager",
+  "Work outdoors": "Art Fair Exhibitor, Outdoor Craft Workshop",
+  "Work with people": "Craft Team Leader, Workshop Coordinator",
+  "Meet new people regularly": "Event Artist, Community Workshop Leader",
+  "Mix of indoor and outdoor work": "Artisan Consultant, Craft Demonstrator",
+  "Flexible timing": "Freelance Artist, Online DIY Creator",
+  "Hands-on/manual work": "Sculptor, Handmade Product Maker",
+  "Digital/online work": "YouTube DIY Channel, Online Craft Courses"
+},
+
+"Learning new languages": {
+  "Work at one place (desk job)": "Translator, Language Instructor",
+  "Work from home": "Online Language Tutor, Freelance Translator",
+  "Move around while working": "Interpreter, Travel Guide",
+  "Travel for work": "Language Consultant, Cultural Exchange Coordinator",
+  "Work outdoors": "Community Language Instructor, Outreach Educator",
+  "Work with people": "Corporate Trainer, Language Workshop Leader",
+  "Meet new people regularly": "Tour Guide, Conversation Coach",
+  "Mix of indoor and outdoor work": "Language Program Coordinator, Study Abroad Facilitator",
+  "Flexible timing": "Freelance Language Tutor, Online Instructor",
+  "Hands-on/manual work": "Sign Language Instructor, Practical Language Coach",
+  "Digital/online work": "Online Language Courses, App-based Language Tutor"
+}
+
+
+
+  };
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const habits = Array.from(document.getElementById("habits").selectedOptions).map(opt => opt.value);
+    const interests = Array.from(document.getElementById("interests").selectedOptions).map(opt => opt.value);
+
+    let results = [];
+
+    habits.forEach(habit => {
+      interests.forEach(interest => {
+        if (suggestions[habit] && suggestions[habit][interest]) {
+          results.push(`${habit} + ${interest}: ${suggestions[habit][interest]}`);
+        }
+      });
+    });
+
+    suggestionBox.style.display = "block";
+    if (results.length > 0) {
+      suggestionBox.innerHTML = results.join("<br><br>");
+    } else {
+      suggestionBox.textContent = "No suggestion available yet for this combination.";
+    }
+  });
+</script>

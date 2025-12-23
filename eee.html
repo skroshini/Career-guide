@@ -1,0 +1,550 @@
+ <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elecctrical field</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+<div class="section">
+<h1>Electrical and Electronics Engineering (EEE)</h1>
+  <p>
+    Electrical and Electronics Engineering (EEE) is a branch of engineering that combines the study of electrical systems and electronic devices.
+  </p>
+  <p><strong>It’s a blend of:</strong></p>
+  <ul>
+    <li><strong>Electrical Engineering</strong> – deals with power generation, transmission, distribution, and large-scale electrical systems.</li>
+    <li><strong>Electronics Engineering</strong> – deals with circuits, microcontrollers, communication systems, and small-scale electronic devices.</li>
+  </ul>
+
+<!-- KEY AREAS OF STUDY - EEE -->
+<div class="eee-section">
+  <h2>Key Areas of Study</h2>
+  <p>(the main subjects and topics that you will typically learn during your course)</p>
+  
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-bolt"></i>
+      <h3>Power Systems</h3>
+      <p>Generation, transmission, and distribution of electrical energy.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-cogs"></i>
+      <h3>Electrical Machines</h3>
+      <p>Working principles and control of motors, generators, and transformers.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-microchip"></i>
+      <h3>Electronics</h3>
+      <p>Analog and digital circuit design for control and communication.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-wave-square"></i>
+      <h3>Control Systems</h3>
+      <p>Modeling and analysis of automatic control in engineering systems.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-broadcast-tower"></i>
+      <h3>Communication Systems</h3>
+      <p>Transmission of signals through wired and wireless channels.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-solar-panel"></i>
+      <h3>Renewable Energy</h3>
+      <p>Solar, wind, and other sustainable energy technologies.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-microchip"></i>
+      <h3>Embedded Systems</h3>
+      <p>Microcontroller and microprocessor-based system design.</p>
+    </div>
+  
+</div>
+
+<style>
+  /* EEE Section Background */
+  .eee-section {
+    background: linear-gradient(90deg, #0d2d4c, #3e1b6e);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+  }
+
+  .eee-section h2 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .eee-section p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  /* Grid Layout */
+  .eee-section .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  /* Box Styling */
+  .eee-section .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .eee-section .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .eee-section .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .eee-section .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .eee-section .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .eee-section .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome (if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</div>
+
+<div class="section">
+  <h3>Skills You Gain</h3>
+  <ul>
+    <li>Problem-Solving Skills – diagnosing and fixing electrical/electronic issues</li>
+    <li>Circuit Design & Analysis – building and testing circuits</li>
+    <li>Programming Skills – C, C++, Python, MATLAB, microcontroller coding</li>
+    <li>Analytical Thinking – interpreting data, troubleshooting systems</li>
+    <li>Project Management – planning and executing technical projects</li>
+    <li>Teamwork & Collaboration – working with engineers from other fields</li>
+    <li>Technical Communication – preparing reports, presenting designs</li>
+    <li>Hands-on Skills – soldering, wiring, equipment handling</li>
+    <li>Knowledge of Standards & Safety – electrical codes, industry safety practices</li>
+    <li>Adaptability – applying skills to new technologies like AI in power systems</li>
+  </ul>
+  </div>
+<div class=" section">
+<h2>Useful Websites for Electrical & Electronics Engineers</h2>
+<ul>
+  <li><a href="https://www.ieee.org/" target="_blank">IEEE – Institute of Electrical and Electronics Engineers</a></li>
+  <li><a href="https://www.electronicsforu.com/" target="_blank">Electronics For You – Circuits & Projects</a></li>
+  <li><a href="https://circuitdigest.com/" target="_blank">Circuit Digest – Tutorials & Projects</a></li>
+  <li><a href="https://www.allaboutcircuits.com/" target="_blank">All About Circuits – Forums & Tutorials</a></li>
+  <li><a href="https://www.edx.org/learn/electrical-engineering" target="_blank">edX – Free Electrical Engineering Courses</a></li>
+</ul>
+
+<style>
+  a {
+    color: rgb(52, 128, 156);
+    text-decoration: underline;
+  }
+  a:hover {
+    color: rgb(67, 122, 170);
+  }
+</style>
+</div>
+
+<div class="section">
+  <h3>Career Opportunities</h3>
+  <ul>
+    <li>Electrical Design Engineer</li>
+    <li>Power Systems Engineer</li>
+    <li>Control & Automation Engineer</li>
+    <li>Power Electronics Engineer</li>
+    <li>Renewable Energy Specialist</li>
+    <li>Embedded Systems Developer</li>
+    <li>Communication Systems Engineer</li>
+    <li>Instrumentation & Testing Engineer</li>
+    <li>Maintenance & Service Engineer</li>
+    <li>Project Manager (Electrical)</li>
+    <li>Research & Development Engineer</li>
+    <li>Robotics & Industrial Automation Engineer</li>
+    <li>Government Jobs (Power Grid, Railways, DRDO, ISRO, BHEL, etc.)</li>
+    <li>Academic & Teaching Roles</li>
+  </ul>
+</div>
+<div class="section">
+  <h3>Future Trends</h3>
+  <ul>
+    <li>Smart Grids – intelligent power networks with real-time monitoring</li>
+    <li>Renewable Energy Integration – solar, wind, and hybrid energy systems</li>
+    <li>Electric Vehicles (EVs) – battery tech, charging, motor control</li>
+    <li>Internet of Energy (IoE) – IoT-based energy systems</li>
+    <li>Power Electronics Advancements – high-efficiency converters/inverters</li>
+    <li>Robotics & Industrial Automation – AI-driven control systems</li>
+    <li>Wireless Power Transfer – contactless charging</li>
+    <li>Energy Storage Solutions – next-gen batteries, supercapacitors</li>
+    <li>Smart Homes & Buildings – IoT-enabled energy management</li>
+    <li>AI & Machine Learning in Power Systems – predictive maintenance, fault detection</li>
+  </ul>
+  </div>
+<div class="section">
+  <h3>Best for Students Who…</h3>
+  <ul>
+    <li>Enjoy working with electric circuits, machines, and electronics</li>
+    <li>Are curious about how power is generated, transmitted, and controlled</li>
+    <li>Like problem-solving and applying physics & math</li>
+    <li>Are interested in renewable energy, automation, or EVs</li>
+    <li>Have good analytical thinking and attention to detail</li>
+    <li>Want to work in both core engineering and emerging tech fields</li>
+    <li>Are passionate about innovation in energy and electronics</li>
+  </ul>
+</div>
+<!-- EEE Career Path Flowchart -->
+
+
+<!-- HOW TO GET INTO THIS FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>How to Get into EEE Field</h2>
+  <p>(Step-by-step pathway from school to career)</p>
+  <div class="flowchart-vertical">
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+      <p>Complete 10th Grade (Science & Math focus)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      <p>Choose Science Stream in 11th–12th (Physics, Chemistry, Math)<br>or choose diploma </p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i>
+      <p>Prepare & Appear for Engineering Entrance Exams (JEE,MCET, State CET, etc.)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+      <p>Enroll in B.E/B.Tech in Electrical & Electronics Engineering (EEE)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-tools"></i>
+      <p>Gain Practical Experience through Internships & Projects</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i>
+      <p>Graduate & Explore Job Opportunities or Higher Studies</p>
+    </div>
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+  /* Study Grid Styles */
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Flowchart Styles */
+  .flowchart-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .flow-step {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 260px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 6px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+    border-color: #ffcc00;
+  }
+
+  .flow-arrow {
+    font-size: 24px;
+    color: #ffcc00;
+  }
+</style>
+
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<div class="section">
+  <h3>Further Studies</h3>
+  <ul>
+    <li>M.Tech / M.E. in Power Systems, Control Systems, Power Electronics, Renewable Energy, Embedded Systems, or Electrical Machines</li>
+    <li>M.S. Abroad in Electrical Engineering, Energy Systems, or Electronics</li>
+    <li>MBA in Technology Management, Project Management, or Energy Management</li>
+    <li>PG Diploma / Certifications in PLC & SCADA, VLSI Design, Embedded Systems, or Electric Vehicle Technology</li>
+    <li>Ph.D. in specialized research like Smart Grids, AI in Power Systems, or Advanced Energy Storage</li>
+    <li>Interdisciplinary Fields like Robotics, Mechatronics, and IoT</li>
+  </ul>
+  </div>
+</section>
+</main>
+  </body>
+  </html>

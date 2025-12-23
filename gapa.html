@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Government & Public Administration</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</a></li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Government & Public Administration</h1>
+ <p> Government and Public Administration is the field that focuses on managing public policies, governance, administration of government services, and working for the welfare of society through leadership, planning, and policy implementation. </p>
+<p>Difference between Government and Public Administration:</p>
+<p>Government is the system or body of people that governs a country, state, or community.</P>
+<p>Public Administration is the practical implementation and management of government policies, programs, and services.</P.
+  </div>
+
+ <div class="section">
+  <h2>Key Areas of Study</h2>
+  <p>(the main subjects and topics that u will typically learn during ur course)</p>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-scale-balanced"></i>
+      <h3>Political Science</h3>
+      <p>Study of government systems, policies, and political behavior.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-scroll"></i>
+      <h3>Public Policy</h3>
+      <p>Designing, analyzing, and evaluating policies.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-landmark"></i>
+      <h3>Public Administration</h3>
+      <p>Management of government institutions and programs</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-chart-line"></i>
+      <h3>Economics</h3>
+      <p>Understanding economic systems and development planning.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-globe"></i>
+      <h3>International Relations</h3>
+      <p>Diplomacy, foreign affairs, and global governance.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-gavel"></i>
+      <h3>Law & Governance</h3>
+      <p>Legal systems, constitutional law, and public laws.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-people-group"></i>
+      <h3>Management & Leadership</h3>
+      <p>Administrative and decision-making skills.</p>
+    </div>
+ 
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome link (add in head if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+      <li>Policy analysis and implementation</li>
+      <li>Leadership and decision-making</li>
+      <li>Strategic planning and governance</li>
+      <li>Public speaking and communication</li>
+      <li>Problem-solving and critical thinking</li>
+      <li>Data interpretation for policy decisions</li>
+      <li>Teamwork and negotiation</li>
+    </ul>
+  </div>
+<div class="section">
+  <h2>Useful Websites for Government & Public Administration Careers</h2>
+  <ul>
+    <li><a href="https://www.india.gov.in/" target="_blank">India.gov.in – Official Portal of the Government of India</a></li>
+    <li><a href="https://www.upsc.gov.in/" target="_blank">UPSC – Union Public Service Commission</a></li>
+    <li><a href="https://www.civilserviceindia.com/" target="_blank">CivilServiceIndia – Exam Resources & Guidance</a></li>
+    <li><a href="https://www.edx.org/learn/public-administration" target="_blank">edX – Free Public Administration Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Government & Public Administration Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<div class="section">
+<h2>Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <ul>
+        <li>BA Political Science</li>
+        <li>BA Public Administration</li>
+        <li>BA Governance & Policy Studies</li>
+        <li>BA International Relations</li>
+        <li>BA Economics (Public Policy specialization)</li>
+       </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>MA Public Administration</li>
+        <li>MA Political Science</li>
+        <li>Master of Public Policy (MPP)</li>
+        <li>Master of Public Administration (MPA)</li>
+        <li>MA International Relations / Diplomacy</li>
+        <li>MBA in Public Policy</li>
+      </ul>
+
+      <p>Doctoral (PhD):</p>
+        <li>PhD in Public Administration</li>
+        <li>PhD in Political Science</li>
+        <li>PhD in Governance & Policy Analysis</li>
+        <li>PhD in International Relations</li>
+
+  </div>
+
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Civil Services (IAS, IPS, IFS, IRS)</li>
+      <li>Policy Analyst</li>
+      <li>University Professor / Researcher</li>
+      <li>Political Journalist</li>
+      <li>Diplomat / Foreign Service Officer</li>
+      <li>Public Policy Consultant</li>
+      <li>NGO / Think Tank Leader</li>
+      <li>Legislative / Legal Advisor</li>
+      <li>Government Economist / Budget Analyst</li>
+      <li>Urban/Regional Planner</li>
+ 
+
+    </ul>  </div>
+
+    <div class="section">
+    <h2>Best for students who </h2>
+<li>Have interest in governance, politics, and public issues</li>
+
+ <li>Enjoy working with communities and policy-making</li>
+
+ <li>Have strong communication and leadership skills</li>
+ <li>Want to make a difference in society</li>
+ 
+ <li>Are comfortable with research, writing, and analysis</li> 
+</div>
+
+<div class="section">
+    <h2>Not suitable for students who</h2>
+<li>Prefer purely technical or lab-based careers</li>
+
+ <li>Do not enjoy social sciences or public interaction</li>
+
+ <li>Avoid debates, negotiations, or decision-making</li>
+ <li>Dislike bureaucracy, rules, and structured environments</li>
+</div>
+
+</style>
+<!-- Add Font Awesome for icons in <head> -->
+<div class="section">
+  <h2>Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose Humanities/Arts stream (Political Science, Economics, History, Sociology, English, Geography) OR Commerce/Science students can also switch later</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Undergraduation</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Undergraduation
+      <small>BA Political Science, BA Public Administration, BA International Relations, BA Economics (Public Policy specialization), BA Governance & Policy Studies etc.
+</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i><br>
+      Postgraduation
+      <small>MA Public Administration, MA Political Science, Master of Public Policy (MPP), Master of Public Administration (MPA), MA International Relations / Diplomacy, MBA in Public Policy etc</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-book"></i><br>
+      Entrance & Competitive Exams
+      <small>PSC Civil Services (IAS, IPS, IFS, IRS), State PSC exams (Provincial Civil Services), SSC CGL (for administrative jobs), UGC-NET/JRF (for lectureship/research), Foreign Service / UN recruitment exams, GRE/GMAT + TOEFL/IELTS (for international MPA/MPP)</small>
+    </div>
+<div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Career Opportunities
+      <small>SCivil Services (IAS, IPS, IFS, IRS, etc.), Policy Analyst / Consultant, Diplomat / Foreign Service Officer, NGO / Think Tank Leader, University Professor / Researcher, Political Journalist / Media Analyst, Urban/Regional Planner, Legislative / Legal Advisor</small>
+    </div>
+
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-rocket"></i><br>
+      PhD (Optional, for Research/Academia)
+      <small>PhD in Public Administration, PhD in Political Science, PhD in Governance & Policy Analysis, PhD in International Relations</small>
+    </div>
+  </div>
+</div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  /* Hover effects */
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  /* Arrow animation */
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<!-- Font Awesome link (only once in head) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

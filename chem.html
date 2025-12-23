@@ -1,0 +1,745 @@
+  <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chemical Engineering</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+
+<div class="section">
+  <h2>Chemical Engineering</h2>
+  <p>
+    Chemical Engineering is the branch of engineering that deals with the design, 
+    development, and operation of processes that transform raw materials into useful 
+    products such as fuels, medicines, plastics, food, and chemicals. 
+    It combines <b>chemistry, physics, biology, and mathematics</b> with engineering principles.
+  </p>
+</div>
+<div class="eee-section">
+  <h2>Key Areas of Study</h2>
+  <p>(The main subjects and topics that you will typically learn during a Chemical Engineering course)</p>
+  
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-flask"></i>
+      <h3>1.Chemical Reaction Engineering</h3>
+      <p>Understanding chemical reactions, reactor design, kinetics, and optimization for maximum yield.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-thermometer-half"></i>
+      <h3>2.Thermodynamics & Heat Transfer</h3>
+      <p>Energy transformations, phase equilibria, and designing heat exchangers and reactors.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-water"></i>
+      <h3>3.Mass Transfer & Separation Processes</h3>
+      <p>Techniques like distillation, absorption, extraction for purifying products and reducing waste.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-tint"></i>
+      <h3>4.Fluid Mechanics & Transport Phenomena</h3>
+      <p>Study of fluid flow, momentum, heat, and mass transfer in pipelines and reactors.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-cogs"></i>
+      <h3>5.Process Control & Instrumentation</h3>
+      <p>Monitoring and controlling chemical processes for safety, efficiency, and automation.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-layer-group"></i>
+      <h3>6.Materials & Nanotechnology</h3>
+      <p>Advanced materials, polymers, composites, and nanomaterials for various industries.</p>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-recycle"></i>
+      <h3>7.Environmental & Safety Engineering</h3>
+      <p>Pollution control, waste management, sustainability, and green chemistry practices.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style>
+  /* EEE Section Background */
+  .eee-section {
+    background: linear-gradient(90deg, #0d2d4c, #3e1b6e);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+  }
+
+  .eee-section h2 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .eee-section p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  /* Grid Layout */
+  .eee-section .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  /* Box Styling */
+  .eee-section .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .eee-section .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .eee-section .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .eee-section .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .eee-section .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .eee-section .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome (if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</div>
+
+<div class="section">
+  <h2>about Key Areas of Study in Chemical Engineering</h2>
+
+  <li><strong></steong>1.Chemical Reaction Engineering</strong></li>
+  <p>Focuses on understanding how chemical reactions occur and how to control them efficiently.</p>
+  <p>Deals with reaction kinetics, reactors (batch, continuous, catalytic), and optimization for maximum yield.</p>
+  <p>Used in industries like petrochemicals, pharmaceuticals, and energy.</p>
+
+ <li><strong>thermodynamics & Heat Transfer</strong></li>
+  <p>Studies energy transformations, phase equilibria, and chemical equilibrium.</p>
+  <p>Heat transfer principles (conduction, convection, radiation) are applied in designing boilers, heat exchangers, and reactors.</p>
+  <p>Essential for power plants, refineries, and cooling systems.</p>
+
+<li><strong>3.Mass Transfer & Separation Processes</strong></li>
+  <p>Involves separation techniques like distillation, absorption, extraction, drying, and membrane separation.</p>
+  <p>Helps in purifying products, recycling materials, and reducing waste.</p>
+  <p>Example: crude oil refining into petrol, diesel, kerosene.</p>
+
+  <li><strong>4.Mechanics & Transport Phenomena</strong></li>
+  <p>Focuses on how fluids (liquids and gases) flow in pipelines, reactors, and equipment.</p>
+  <p>Includes momentum, heat, and mass transport analysis.</p>
+  <p>Crucial for pipeline design, chemical reactors, and water treatment plants.</p>
+
+  <li><strong>5.Control & Instrumentation</strong></li>
+  <p>Deals with monitoring and controlling chemical plants using sensors, controllers, and software.</p>
+  <p>Ensures safety, efficiency, and automation in chemical industries.</p>
+  <p>Example: automated refinery control systems.</p>
+
+ <li><strong>6.materials & Nanotechnology</strong></li>
+  <p>Studies advanced materials, polymers, composites, and nanomaterials.</p>
+  <p>Used for developing stronger, lighter, and more resistant materials.</p>
+  <p>Applications in electronics, medicine, aerospace, and energy.</p>
+
+  <li><strong>7.Environmental & Safety Engineering</strong></li>
+  <p>Focuses on pollution control, waste management, and sustainability.</p>
+  <p>Studies impact of chemical industries on environment and human health.</p>
+  <p>Example: carbon capture, water treatment, green chemistry.</p>
+</div>
+
+
+
+
+
+<div class="section">
+  <h2>Job Opportunities</h2>
+  <ul>
+    <li>Process Engineer</li>
+    <li>Petroleum / Refinery Engineer</li>
+    <li>Pharmaceutical Engineer</li>
+    <li>Bioprocess Engineer</li>
+    <li>Environmental Engineer</li>
+    <li>Materials & Polymer Engineer</li>
+    <li>Researcher or Scientist</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Industries / Employers</h2>
+  <ul>
+    <li>Oil & Gas (ONGC, Shell, Reliance, ExxonMobil)</li>
+    <li>Pharmaceuticals (Dr. Reddy’s, Pfizer, Sun Pharma)</li>
+    <li>Chemical & Fertilizers (BASF, GAIL, Tata Chemicals)</li>
+    <li>Food & Beverages (Nestlé, PepsiCo)</li>
+    <li>Renewable & Energy (biofuels, hydrogen, nuclear energy)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Best for Students Who?</h2>
+  <ul>
+    <li>Love <b>Chemistry, Physics & Math</b></li>
+    <li>Are curious about how raw materials turn into useful products</li>
+    <li>Enjoy <b>experiments, lab work, and industrial processes</b></li>
+    <li>Care about <b>sustainability & environmental solutions</b></li>
+    <li>Want to work in <b>energy, pharmaceuticals, or manufacturing sectors</b></li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Useful Websites for Chemical Engineers</h2>
+  <ul>
+    <li><a href="https://www.aiche.org/" target="_blank">AIChE – American Institute of Chemical Engineers</a></li>
+    <li><a href="https://www.chemengonline.com/" target="_blank">Chemical Engineering Online – Articles & News</a></li>
+    <li><a href="https://www.edx.org/learn/chemical-engineering" target="_blank">edX – Free Chemical Engineering Courses</a></li>
+    <li><a href="https://www.sciencedirect.com/journal/chemical-engineering-journal" target="_blank">ScienceDirect – Chemical Engineering Research</a></li>
+    <li><a href="https://www.chemeurope.com/en/" target="_blank">ChemEurope – Industry Updates & Resources</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<!-- HOW TO GET INTO THIS FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>How to Get into Chemical Engineering</h2>
+  <p>(Step-by-step pathway from school to career)</p>
+  
+  <div class="flowchart-vertical">
+    
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+      <p>Complete 10th Grade (Science & Math focus)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      <p>Choose Science Stream in 11th–12th (Physics, Chemistry, Math/Biology)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i>
+      <p>Prepare & Appear for Engineering Entrance Exams (JEE, State CET, etc.)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+      <p>Enroll in B.E/B.Tech in Chemical Engineering</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-flask"></i>
+      <p>Gain Practical Experience through Lab Work, Internships & Projects</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i>
+      <p>Graduate & Explore Job Opportunities or Higher Studies (M.Tech / PhD)</p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+  /* Study Grid Styles */
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Flowchart Styles */
+  .flowchart-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .flow-step {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 260px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 6px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+    border-color: #ffcc00;
+  }
+
+  .flow-arrow {
+    font-size: 24px;
+    color: #ffcc00;
+  }
+</style>
+
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="section">
+  <h2>Further Studies in Chemical Engineering</h2>
+  
+  <h3>Master’s Degree (M.Tech / M.S)</h3>
+  <p>Specializations include:</p>
+  <ul>
+    <li>Chemical Process Engineering</li>
+    <li>Biochemical / Biotechnology Engineering</li>
+    <li>Materials Science & Nanotechnology</li>
+    <li>Environmental & Safety Engineering</li>
+    <li>Energy & Fuel Technology</li>
+  </ul>
+  <p>Focuses on advanced concepts, research, and specialized skills. Duration: Typically 2 years.</p>
+  
+  <h3>PhD / Doctoral Research</h3>
+  <p>For students interested in research, innovation, or academia. Focus areas include:</p>
+  <ul>
+    <li>Catalysis & Reaction Engineering</li>
+    <li>Advanced Materials & Polymers</li>
+    <li>Renewable Energy & Biofuels</li>
+    <li>Environmental Sustainability</li>
+  </ul>
+  <p>Leads to careers in research institutes, universities, or R&D departments.</p>
+  
+  <h3>International Studies / Exchange Programs</h3>
+  <p>Pursue M.S. or PhD abroad in countries like USA, Germany, UK, Canada. Opportunities for cutting-edge research and global exposure.</p>
+  
+  <h3>Professional Certifications</h3>
+  <ul>
+    <li>Process Safety Management</li>
+    <li>Project Management in Chemical Industries</li>
+    <li>Advanced CAD & Simulation Tools (Aspen HYSYS, MATLAB, COMSOL)</li>
+    <li>Environmental & Sustainability Certifications</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Future Trends in Chemical Engineering</h2>
+  <p>(Key developments shaping the field in 2025 and beyond)</p>
+  
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-leaf"></i>
+      <h3>Sustainable & Green Chemistry</h3>
+      <ul>
+        <li>Circular Economy: Recycling and waste valorization</li>
+        <li>Bio-based Feedstocks: Renewable raw materials</li>
+        <li>Carbon Capture & Utilization (CCU)</li>
+      </ul>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-robot"></i>
+      <h3>Digitalization & Industry 4.0</h3>
+      <ul>
+        <li>Artificial Intelligence for process optimization</li>
+        <li>Big Data & IoT for real-time monitoring</li>
+        <li>Automation & Robotics for enhanced efficiency</li>
+      </ul>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-vials"></i>
+      <h3>Advanced Materials & Nanotechnology</h3>
+      <ul>
+        <li>Smart Materials responsive to environment</li>
+        <li>Nanomaterials for medicine, energy, catalysis</li>
+        <li>4D Printing: Materials that change over time</li>
+      </ul>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-bolt"></i>
+      <h3>Energy Transition & Decarbonization</h3>
+      <ul>
+        <li>Hydrogen Economy: Clean energy technologies</li>
+        <li>Electrification of chemical processes</li>
+        <li>Integration of renewable energy sources</li>
+      </ul>
+    </div>
+    
+    <div class="study-box">
+      <i class="fas fa-users"></i>
+      <h3>Ethical & Responsible Engineering</h3>
+      <ul>
+        <li>Social Responsibility: Considering societal impacts</li>
+        <li>Alignment with Sustainable Development Goals (SDGs)</li>
+        <li>Community Engagement in decision-making</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+  /* Study Grid Styles */
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Flowchart Styles */
+  .flowchart-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .flow-step {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 260px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 6px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+    border-color: #ffcc00;
+  }
+
+  .flow-arrow {
+    font-size: 24px;
+    color: #ffcc00;
+  }
+</style>
+
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

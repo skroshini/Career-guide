@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto;
+    }
+
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</a></li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Travel</h1>
+ <p>The field of <strong>Travel</strong> is about exploring destinations, promoting tourism, planning itineraries, and providing services for people who love to discover new places. It connects culture, adventure, hospitality, and business opportunities worldwide.</p>
+  </div>
+
+ <div class="section">
+  <h2>Key Areas of Study</h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-globe-americas"></i>
+      <h3>Tourism Studies</h3>
+      <p>Understanding global destinations, tourism trends, and cultural tourism.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-plane"></i>
+      <h3>Travel Management</h3>
+      <p>Managing travel agencies, airlines, and trip planning.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-hotel"></i>
+      <h3>Hospitality</h3>
+      <p>Learning hotel operations and guest management for travelers.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-route"></i>
+      <h3>Itinerary Planning</h3>
+      <p>Designing trips, packages, and tours for clients.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-passport"></i>
+      <h3>International Travel</h3>
+      <p>Visa, immigration rules, and overseas travel planning.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-business-time"></i>
+      <h3>Travel Business</h3>
+      <p>Running agencies, startups, or corporate travel solutions.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+      <li>Trip and itinerary planning</li>
+      <li>Customer service and communication</li>
+      <li>Event and travel management</li>
+      <li>Problem-solving during travel</li>
+      <li>Cross-cultural awareness</li>
+      <li>Business and entrepreneurship</li>
+      <li>Networking in tourism industry</li>
+    </ul>
+  </div>
+<div class="section">
+  <h2>Useful Websites for Travel Careers</h2>
+  <ul>
+    <li><a href="https://www.lonelyplanet.com/" target="_blank">Lonely Planet – Travel Guides & Destination Information</a></li>
+    <li><a href="https://www.travelandleisure.com/" target="_blank">Travel + Leisure – Travel Tips & Industry News</a></li>
+    <li><a href="https://www.booking.com/" target="_blank">Booking.com – Hospitality & Tourism Opportunities</a></li>
+    <li><a href="https://www.edx.org/learn/tourism" target="_blank">edX – Free Travel & Tourism Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Tourism & Travel Management Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<div class="section">
+<h2>Courses</h2>
+      <p>Undergraduate Courses:</p>
+      <ul>
+        <li>BA Travel and Tourism Management</li>
+        <li>BSc Aviation and Hospitality</li>
+        <li>BA Tourism Studies</li>
+        <li>BBA Travel and Tourism</li>
+        <li>Diploma in Travel Management</li>
+       </ul>
+
+      <p>Postgraduate Courses:</p>
+      <ul>
+        <li>MA Travel and Tourism Management</li>
+        <li>MBA Tourism and Hospitality</li>
+        <li>Master of Travel Management</li>
+        <li>MSc Aviation and Tourism</li>
+        <li>MA International Tourism</li>
+      </ul>
+
+      <p>Doctoral (PhD):</p>
+        <li>PhD in Tourism Management</li>
+        <li>PhD in Travel Studies</li>
+        <li>PhD in Aviation and Hospitality</li>
+  </div>
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Travel Consultant</li>
+      <li>Tour Operator</li>
+      <li>Airline/Airport Manager</li>
+      <li>Travel Blogger / Influencer</li>
+      <li>Corporate Travel Planner</li>
+      <li>Hospitality Manager</li>
+      <li>Event and Conference Organizer</li>
+      <li>Adventure Tour Guide</li>
+      <li>Immigration/Customs Consultant</li>
+    </ul>  
+  </div>
+
+  <div class="section">
+    <h2>Best for students who</h2>
+<li>Love exploring new cultures and destinations</li>
+<li>Have strong communication and people skills</li>
+<li>Enjoy organizing and planning trips</li>
+<li>Want a career with travel opportunities</li>
+<li>Have interest in hospitality and tourism</li> 
+</div>
+
+<div class="section">
+    <h2>Not suitable for students who</h2>
+<li>Prefer jobs with no travel or mobility</li>
+<li>Dislike dealing with people or customer service</li>
+<li>Avoid uncertainty and dynamic environments</li>
+<li>Prefer technical/lab-based jobs</li>
+</div>
+
+<div class="section">
+  <h2>Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose any stream (Arts, Commerce, or Science). Focus on English, Geography, Business Studies if possible.</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Complete Higher Secondary (10+2) from any stream</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <!-- ✅ Entrance Exams Step -->
+    <div class="flow-step">
+      <i class="fas fa-file-alt"></i><br>
+      Entrance Exams
+      <small>NCHM JEE (Hotel Management & Tourism), CUET (for BA Tourism Studies/Travel courses), state/university entrance exams</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Undergraduation
+      <small>BA Travel & Tourism, BBA Tourism Management, B.Sc. Hospitality & Hotel Administration (via NCHM JEE), BA Aviation & Hospitality, Bachelor of Hotel Management (BHM), etc.</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i><br>
+      Postgraduation
+      <small>MA/MBA in Tourism Management, MSc in Hospitality & Tourism, Master of Travel Administration, International MBA in Hospitality/Tourism</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-book"></i><br>
+      Competitive/Global Exams
+      <small>UGC NET (for research/lectureship), GRE/GMAT + TOEFL/IELTS (for abroad studies), state PSC exams (for tourism departments)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Career Opportunities
+      <small>Travel Consultant, Tour Manager, Airline Staff, Cruise Management, Event Planner, Travel Blogger, Hotel & Resort Manager, Government Tourism Officer</small>
+    </div>
+    
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-rocket"></i><br>
+      PhD (Optional, for Research/Academia)
+      <small>PhD in Tourism & Hospitality, PhD in Travel Management, PhD in Aviation & Tourism Studies</small>
+    </div>
+  </div>
+</div>
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

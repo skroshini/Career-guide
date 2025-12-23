@@ -1,0 +1,893 @@
+  <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elecctrical field</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+<main>
+
+    <!-- SOFTWARE ENGINEERING / SOFTWARE DEVELOPMENT -->
+<div class="section">
+  <h2>🖥️ Software Engineering / Software Development</h2>
+  <p>Software Engineering is the field of designing, building, testing, and maintaining computer programs and applications. Professionals create everything from mobile apps and websites to large-scale systems like operating systems, databases, and AI tools.</p>
+</div>
+
+<!-- KEY AREAS / SPECIALIZATIONS (FLIP-CARDS) -->
+<div class="section">
+  <h3>Key Areas / Specializations in Software</h3>
+  <div class="flip-card-container">
+    <!-- Web Development -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>🌐 Web Development</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Designing and building websites & web apps.</p>
+          <ul>
+            <li><b>Frontend:</b> HTML, CSS, JavaScript, React, Angular, Vue</li>
+            <li><b>Backend:</b> Node.js, Python, Java, PHP, Ruby, SQL/NoSQL</li>
+            <li><b>Full-Stack:</b> Integrates frontend & backend</li>
+            <li><b>Job Roles:</b> Frontend Dev, Backend Dev, Full-Stack Dev</li>
+            <li><b>Applications:</b> E-commerce sites, blogs, dashboards, SaaS apps</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile App Development -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>📱 Mobile App Development</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Building applications for smartphones & tablets.</p>
+          <ul>
+            <li>Android → Java, Kotlin, Flutter</li>
+            <li>iOS → Swift, Objective-C</li>
+            <li>Cross-Platform → React Native, Flutter</li>
+            <li><b>Job Roles:</b> Mobile App Developer, UI/UX Designer</li>
+            <li><b>Applications:</b> Social apps, gaming apps, business apps</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artificial Intelligence -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>🤖 AI & Machine Learning</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Creating intelligent systems that learn and make decisions.</p>
+          <ul>
+            <li>Machine Learning (Supervised, Unsupervised, Reinforcement)</li>
+            <li>Deep Learning (Neural Networks, TensorFlow, PyTorch)</li>
+            <li>Natural Language Processing & Computer Vision</li>
+            <li><b>Job Roles:</b> AI Engineer, ML Engineer, Data Scientist</li>
+            <li><b>Applications:</b> Chatbots, recommendation systems, self-driving cars</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Science -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>📊 Data Science</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Extracting insights from large datasets to support decisions.</p>
+          <ul>
+            <li>Data Cleaning & Analysis with Python, R, SQL</li>
+            <li>Big Data tools: Hadoop, Spark</li>
+            <li>Visualization: Tableau, Power BI, Matplotlib</li>
+            <li><b>Job Roles:</b> Data Analyst, Data Scientist, BI Developer</li>
+            <li><b>Applications:</b> Business intelligence, predictive analytics, trend forecasting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>🔐 Cybersecurity</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Protecting networks, systems, and data from cyber threats.</p>
+          <ul>
+            <li>Ethical Hacking & Penetration Testing</li>
+            <li>Cryptography, Firewalls, VPNs, Security Protocols</li>
+            <li>Network & Cloud Security</li>
+            <li><b>Job Roles:</b> Security Analyst, Ethical Hacker, Security Engineer</li>
+            <li><b>Applications:</b> Banking, IT security, government systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud & DevOps -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>☁️ Cloud Computing & DevOps</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Deploying & managing applications on cloud platforms efficiently.</p>
+          <ul>
+            <li>Cloud Platforms: AWS, Azure, Google Cloud</li>
+            <li>DevOps: CI/CD, Docker, Kubernetes, Jenkins</li>
+            <li>Automation & Monitoring of systems</li>
+            <li><b>Job Roles:</b> Cloud Engineer, DevOps Engineer, Site Reliability Engineer</li>
+            <li><b>Applications:</b> SaaS, enterprise apps, scalable cloud services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Development -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>🎮 Game Development</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Designing interactive video games for multiple platforms.</p>
+          <ul>
+            <li>Game Engines: Unity, Unreal Engine</li>
+            <li>Programming: C#, C++, Python</li>
+            <li>VR/AR & Graphics design</li>
+            <li><b>Job Roles:</b> Game Developer, Game Designer, 3D Artist</li>
+            <li><b>Applications:</b> Console games, mobile games, VR experiences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software Testing -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>🧪 Software Testing</h4>
+        </div>
+        <div class="flip-card-back">
+          <p>Ensuring software is reliable, secure, and bug-free.</p>
+          <ul>
+            <li>Manual & Automated Testing</li>
+            <li>Tools: Selenium, JUnit, Postman</li>
+            <li>Performance, Security & Usability Testing</li>
+            <li><b>Job Roles:</b> QA Engineer, Test Automation Engineer</li>
+            <li><b>Applications:</b> Software products, apps, websites</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FLIP-CARD STYLES WITH MATCHING BACKGROUND -->
+<style>
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-front {
+  background: #5f225b; /* Blue-ish front */
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flip-card-back {
+  background: #edf3f8; /* Matching lighter back */
+  color: #333;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: left;
+  overflow-y: auto;
+}
+</style>
+</div>
+<!-- SHINING FLIP-CARD STYLES -->
+<style>
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: background 0.5s ease;
+}
+
+/* Front shining background */
+.flip-card-front {
+  background: linear-gradient(-45deg, #4a90e2, #50e3c2, #9013fe, #f5a623);
+  background-size: 400% 400%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Back shining background */
+.flip-card-back {
+  background: linear-gradient(-45deg, #f5a623, #9013fe, #50e3c2, #4a90e2);
+  background-size: 400% 400%;
+  color: #fff;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: left;
+  overflow-y: auto;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+</style>
+
+
+<!-- SKILLS -->
+<div class="section">
+  <h3>Skills Needed</h3>
+  <ul>
+    <li>Programming (Python, Java, C++, JavaScript, etc.)</li>
+    <li>Problem-solving & Logical Thinking</li>
+    <li>Algorithms & Data Structures</li>
+    <li>Database Management (SQL, NoSQL)</li>
+    <li>Teamwork & Communication</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>Job Roles</h3>
+  <ul>
+    <li>Software Engineer</li>
+    <li>Web / App Developer</li>
+    <li>Data Scientist</li>
+    <li>AI / ML Engineer</li>
+    <li>Cybersecurity Analyst</li>
+    <li>Cloud Engineer</li>
+    <li>Game Developer</li>
+  </ul>
+</div>
+
+<div class="future-trends-section">
+  <h2>Future Trends in Software</h2>
+  <p>(Hover to tilt and click to flip for details)</p>
+
+  <div class="study-grid">
+
+    <!-- AI & Automation -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-robot"></i>
+          <h3>AI & Automation</h3>
+          <p>Intelligent systems & automation</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> AI will transform business, healthcare, and daily life. Key areas: Generative AI, Predictive Analytics, AI-powered assistants.</p>
+          <p><strong>Opportunities:</strong> AI Engineer, ML Engineer, Data Scientist</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud & Edge Computing -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud & Edge Computing</h3>
+          <p>Faster data processing & hybrid cloud</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> Cloud services will dominate with hybrid & edge computing. Applications: SaaS platforms, IoT integration, low-latency services.</p>
+          <p><strong>Opportunities:</strong> Cloud Engineer, DevOps Engineer, Site Reliability Engineer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Cybersecurity</h3>
+          <p>Protecting systems & data</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> Evolving cyber threats increase demand for experts. Trends: Zero Trust, AI-driven threat detection, blockchain security.</p>
+          <p><strong>Opportunities:</strong> Security Analyst, Ethical Hacker, Security Engineer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blockchain & Web3 -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-link"></i>
+          <h3>Blockchain & Web3</h3>
+          <p>Decentralized systems</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> Beyond crypto: NFTs, decentralized finance, secure supply chains.</p>
+          <p><strong>Opportunities:</strong> Blockchain Developer, Web3 Engineer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quantum Computing -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-atom"></i>
+          <h3>Quantum Computing</h3>
+          <p>Next-gen computation</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> Quantum computing revolutionizes cryptography, optimization, and simulations. Focus: Quantum algorithms, quantum-safe security.</p>
+          <p><strong>Opportunities:</strong> Quantum Researcher, Quantum Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AR / VR & Metaverse -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-vr-cardboard"></i>
+          <h3>AR / VR & Metaverse</h3>
+          <p>Immersive virtual experiences</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> AR/VR will change gaming, education, and collaboration. Focus: Virtual environments, AR apps, digital economies.</p>
+          <p><strong>Opportunities:</strong> VR Developer, AR Designer, Metaverse Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IoT & Smart Devices -->
+    <div class="flip-card" onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)" onclick="toggleCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-network-wired"></i>
+          <h3>IoT & Smart Devices</h3>
+          <p>Connected everyday objects</p>
+        </div>
+        <div class="flip-card-back">
+          <p><strong>Details:</strong> Smart devices connect everyday objects to the internet. Trend: Smart homes, connected cars, industrial IoT.</p>
+          <p><strong>Opportunities:</strong> IoT Developer, Embedded Systems Engineer, IoT Architect</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  perspective: 1000px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Front styling with shiny gradient */
+.flip-card-front {
+  background: linear-gradient(135deg, #143d66,#3e1b6e);
+  border: 2px solid #fff;
+}
+
+.flip-card-front i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+/* Back styling */
+.flip-card-back {
+  background: linear-gradient(135deg, #804dcc);
+  transform: rotateY(180deg);
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.flip-card.active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+</style>
+
+<script>
+// Toggle flip card on click
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+
+// 3D tilt on hover
+function tiltCard(event, card) {
+  const cardInner = card.querySelector('.flip-card-inner');
+  const rect = card.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  const cx = rect.width / 2;
+  const cy = rect.height / 2;
+
+  const rotateX = ((y - cy) / cy) * 10;
+  const rotateY = ((x - cx) / cx) * 10;
+
+  cardInner.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg) ${card.classList.contains('active') ? 'rotateY(180deg)' : ''}`;
+}
+
+function resetTilt(card) {
+  const cardInner = card.querySelector('.flip-card-inner');
+  cardInner.style.transform = card.classList.contains('active') ? 'rotateY(180deg)' : 'rotateY(0deg) rotateX(0deg)';
+}
+</script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</div>
+
+
+<div class="section">
+<!-- HOW TO GET INTO SOFTWARE FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>How to Get into Software Field</h2>
+  <p>(Step-by-step pathway from school to career)</p>
+  <div class="flowchart-vertical">
+
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+      <p>Complete 10th Grade (Science & Math focus). Develop logical thinking & basic computer skills.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      <p>Choose Science Stream in 11th–12th (Physics, Chemistry, Math) with Computer Science if available.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-laptop-code"></i>
+      <p>Learn basic programming: Python, Java, C++. Practice small projects and online coding challenges.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+      <p>Enroll in B.Tech/B.E in Computer Science / IT / Software Engineering or BCA.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-code"></i>
+      <p>Develop skills in key areas: Web/Mobile Development, AI/ML, Data Science, Cybersecurity, Cloud, Game Development.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-certificate"></i>
+      <p>Obtain certifications & online courses: AI/ML, Cloud (AWS/Azure), Cybersecurity (CEH, Security+), Full-Stack Web Development.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-project-diagram"></i>
+      <p>Work on real-world projects, internships, hackathons, and open-source contributions to build experience & portfolio.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-user-tie"></i>
+      <p>Start career: Software Developer, Data Scientist, AI Engineer, Cybersecurity Analyst, Cloud Engineer, Mobile App Developer.</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-rocket"></i>
+      <p>Further growth: Pursue higher studies (M.Tech/MCA) or advanced certifications, specialize in emerging tech (Quantum Computing, AR/VR, Web3).</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Styles -->
+<style>
+.flowchart-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 260px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-step i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 6px;
+}
+
+.flow-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+  border-color: #ffcc00;
+}
+
+.flow-arrow {
+  font-size: 24px;
+  color: #ffcc00;
+}
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- FURTHER STUDIES IN SOFTWARE FIELD -->
+<div class="section">
+  <h2>Further Studies in Software Field</h2>
+  <p>After completing your graduation in Software/Computer Science, here are the options to advance your career:</p>
+
+  <div class="study-points">
+
+    <div class="study-step">
+      <h3>1. Master’s Programs</h3>
+      <ul>
+        <li><strong>M.Tech / M.E in Computer Science or IT:</strong> Specialize in AI, Machine Learning, Cybersecurity, Cloud Computing, Software Architecture.</li>
+        <li><strong>MCA (Master of Computer Applications):</strong> Focus on software development, system design, databases, and app development.</li>
+      </ul>
+    </div>
+
+    <div class="study-step">
+      <h3>2. Professional Certifications</h3>
+      <ul>
+        <li><strong>AI / Machine Learning:</strong> TensorFlow, PyTorch, Google AI Certificates.</li>
+        <li><strong>Data Science & Analytics:</strong> Python, R, SQL, Tableau, Power BI.</li>
+        <li><strong>Cloud Computing:</strong> AWS, Azure, Google Cloud certifications.</li>
+        <li><strong>Cybersecurity:</strong> CEH, CompTIA Security+, CISSP.</li>
+        <li><strong>DevOps & Software Engineering:</strong> Docker, Kubernetes, CI/CD, Agile/Scrum.</li>
+        <li><strong>Emerging Technologies:</strong> Blockchain, Web3, AR/VR.</li>
+      </ul>
+    </div>
+
+    <div class="study-step">
+      <h3>3. Research & Projects</h3>
+      <ul>
+        <li>Participate in research projects in AI, Cybersecurity, or Quantum Computing.</li>
+        <li>Contribute to open-source projects and online hackathons.</li>
+        <li>Build a strong portfolio to showcase practical skills.</li>
+      </ul>
+    </div>
+
+    <div class="study-step">
+      <h3>4. Higher Research (PhD / Specialized Studies)</h3>
+      <ul>
+        <li>Pursue PhD in Software Engineering, AI, Data Science, Cybersecurity, or Blockchain.</li>
+        <li>Focus on advanced research, publishing papers, specialized technical roles, or academic positions.</li>
+      </ul>
+    </div>
+
+    <div class="study-step">
+      <h3>5. Other Options</h3>
+      <ul>
+        <li>Postgraduate diplomas or short-term courses for skill enhancement in AI, Full-Stack Development, Cloud, Cybersecurity.</li>
+        <li>Online learning platforms: Coursera, Udemy, EdX, MIT OpenCourseWare.</li>
+        <li>Entrepreneurship & startups: Build apps, SaaS products, or software services.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+</main>
+</body>
+</html>

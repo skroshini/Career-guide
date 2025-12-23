@@ -1,0 +1,820 @@
+  <!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elecctrical field</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+
+<div class="section">
+  <h2>🌐 Industrial Field </h2>
+  <p><strong>Definition:</strong></p>
+  <p>The industrial field focuses on production, manufacturing, operations, and management of industries. It combines engineering, technology, and business practices to design, improve, and maintain industrial processes efficiently and safely.</p>
+</div>
+
+<div class="section">
+<div class="eee-section">
+  <h2>Key Areas of Industrial Field</h2>
+  <p>(The main subjects and topics you will learn or work on in the industrial field)</p>
+  
+  <div class="study-grid">
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-cogs"></i>
+          <h3>Industrial Engineering</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Optimize production processes, reduce waste, and increase efficiency. Topics include work study, time-motion analysis, facility layout, production planning, lean manufacturing, and Six Sigma.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-industry"></i>
+          <h3>Manufacturing & Production</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Focus on production of goods using machines, materials, and labor. Topics include machining, casting, molding, welding, assembly, CIM, and automation in production.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-check-circle"></i>
+          <h3>Quality Control & Assurance</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Ensure products meet industrial and safety standards. Topics include statistical quality control, total quality management, ISO standards, and compliance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-truck"></i>
+          <h3>Supply Chain & Logistics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Manage materials, inventory, and product flow. Topics include inventory management, warehouse operations, transportation planning, distribution, procurement, and vendor management.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Safety & Environmental Management</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Maintain workplace safety and reduce environmental impact. Topics include industrial safety protocols, risk assessment, occupational health, and environmental regulations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-robot"></i>
+          <h3>Automation & Robotics</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Integrate machines, robots, and AI to improve production efficiency. Topics include industrial robots, PLCs, automation software, IoT in manufacturing, and smart factories.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<style>
+/* Flip Card Grid */
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  perspective: 1000px;
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Front styling */
+.flip-card-front {
+  background-color: rgba(255,255,255,0.08);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.flip-card-front i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.flip-card-front:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+  border-color: #ffcc00;
+}
+
+.flip-card-front:hover i {
+  transform: rotate(360deg) scale(1.2);
+  color: #ffd633;
+}
+
+/* Back styling */
+.flip-card-back {
+  background-color: #1e1e2f;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  line-height: 1.4;
+}
+</style>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</div>
+
+<div class="eee-section">
+  <h2>Careers in Industrial Field</h2>
+  <p>(Click a card to view details)</p>
+
+  <div class="career-grid">
+    
+    <!-- Industrial Engineer -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-cogs"></i>
+          <h3>Industrial Engineer</h3>
+        </div>
+        <div class="card-back">
+          <h4>Industrial Engineer</h4>
+          <p><strong>Responsibilities:</strong> Analyze production, design workflows, improve efficiency, apply lean manufacturing.</p>
+          <p><strong>How to Become:</strong> B.Tech/B.E in Industrial/Mechanical Engineering, internships, Six Sigma/Lean training.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Production Manager -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-industry"></i>
+          <h3>Production Manager</h3>
+        </div>
+        <div class="card-back">
+          <h4>Production Manager</h4>
+          <p><strong>Responsibilities:</strong> Oversee manufacturing, manage teams, meet quality and efficiency goals.</p>
+          <p><strong>How to Become:</strong> Degree in Industrial/Production Engineering or MBA in Operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quality Analyst -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-check-circle"></i>
+          <h3>Quality Analyst</h3>
+        </div>
+        <div class="card-back">
+          <h4>Quality Analyst / Inspector</h4>
+          <p><strong>Responsibilities:</strong> Monitor production quality, perform inspections, ensure compliance with standards.</p>
+          <p><strong>How to Become:</strong> Diploma or degree in Engineering, certifications in quality management (ISO, Six Sigma).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supply Chain Specialist -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Supply Chain Specialist</h3>
+        </div>
+        <div class="card-back">
+          <h4>Supply Chain Specialist</h4>
+          <p><strong>Responsibilities:</strong> Manage logistics, procurement, inventory, and distribution efficiency.</p>
+          <p><strong>How to Become:</strong> Degree in Supply Chain Management, Logistics, or Industrial Engineering; internships in operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HSE Officer -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-shield-alt"></i>
+          <h3>HSE Officer</h3>
+        </div>
+        <div class="card-back">
+          <h4>Health, Safety & Environment (HSE) Officer</h4>
+          <p><strong>Responsibilities:</strong> Ensure workplace safety, environmental compliance, risk assessments, and training programs.</p>
+          <p><strong>How to Become:</strong> Degree in Engineering/Environmental Science, certifications in safety management (NEBOSH, ISO 45001).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Automation & Robotics Engineer -->
+    <div class="career-card" onclick="togglePopup(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <i class="fas fa-robot"></i>
+          <h3>Automation & Robotics Engineer</h3>
+        </div>
+        <div class="card-back">
+          <h4>Automation & Robotics Engineer</h4>
+          <p><strong>Responsibilities:</strong> Design, program, and maintain automated machinery and robotic systems in manufacturing.</p>
+          <p><strong>How to Become:</strong> B.Tech/B.E in Robotics, Mechatronics, or Electrical Engineering; internships in industrial automation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+body {
+  background: #0a0f1f;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.career-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  box-shadow: 0 0 15px rgba(0,255,255,0.4);
+  animation: glowPulse 4s infinite alternate;
+}
+
+/* Hover tilt effect */
+.career-card:hover .card-inner {
+  transform: rotateY(10deg) rotateX(5deg);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.5);
+}
+
+/* Flip on active */
+.career-card.active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Front */
+.card-front {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-size: 18px;
+}
+
+.card-front i {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+/* Back */
+.card-back {
+  background: linear-gradient(135deg, #00ccff, #0d0d0d);
+  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+/* Glow animation */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px #131313, 0 0 20px #ff00ff; }
+  50% { box-shadow: 0 0 25px #00ff99, 0 0 35px #ff0066; }
+  100% { box-shadow: 0 0 15px #00ccff, 0 0 30px #ff33ff; }
+}
+</style>
+
+<script>
+// Toggle flip on click
+document.querySelectorAll('.career-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="section">
+  <h2>Skills You Gain in Industrial Field</h2>
+  <p>(Key skills and abilities developed in this field)</p>
+
+  <ul>
+    <li><strong>Process Analysis & Workflow Optimization:</strong> Learn to improve industrial processes for efficiency and productivity.</li>
+    <li><strong>Quality Control & Auditing:</strong> Ensure products meet quality standards and compliance requirements.</li>
+    <li><strong>Supply Chain Management & Logistics:</strong> Manage procurement, inventory, and distribution effectively.</li>
+    <li><strong>Industrial Safety & Environmental Compliance:</strong> Implement safety protocols and environmental regulations.</li>
+    <li><strong>Automation & Robotics:</strong> Operate and optimize automated systems and machinery.</li>
+    <li><strong>Project Management & Leadership:</strong> Lead teams, plan projects, and manage industrial operations efficiently.</li>
+  </ul>
+</div>
+
+<!-- FUTURE TRENDS - INDUSTRIAL -->
+<div class="eee-section">
+  <h2>Future Trends in Industrial Field</h2>
+  <p>(Emerging technologies and practices shaping the industrial sector)</p>
+  
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-robot"></i>
+      <h3>Industry 4.0</h3>
+      <p>Smart factories, IoT integration, AI-driven manufacturing, and real-time data analytics.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-recycle"></i>
+      <h3>Sustainable Manufacturing</h3>
+      <p>Eco-friendly production, waste reduction, energy efficiency, and green technology adoption.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-robot"></i>
+      <h3>Automation & Robotics</h3>
+      <p>Collaborative robots (cobots), automated assembly lines, and robotic process optimization.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-chart-line"></i>
+      <h3>Advanced Analytics</h3>
+      <p>Predictive maintenance, machine learning for operations, and big data-driven decision making.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-truck"></i>
+      <h3>Global Supply Chain Evolution</h3>
+      <p>AI, blockchain, and IoT for transparent, efficient, and resilient supply chains.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-bolt"></i>
+      <h3>Energy Efficiency & Renewable Integration</h3>
+      <p>Integration of renewable energy in manufacturing and optimizing energy consumption.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Same styles as previous EEE section for consistency */
+.eee-section {
+  background: linear-gradient(90deg, #0d2d4c, #3e1b6e);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.eee-section h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.eee-section p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Grid Layout */
+.eee-section .study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Box Styling */
+.eee-section .study-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eee-section .study-box i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.eee-section .study-box h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.eee-section .study-box p {
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* Hover Animation */
+.eee-section .study-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+  border-color: #ffcc00;
+}
+
+.eee-section .study-box:hover i {
+  transform: rotate(360deg) scale(1.2);
+  color: #ffd633;
+}
+</style>
+
+<!-- Font Awesome (if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="section">
+  <h2>Useful Websites for Industrial Engineers</h2>
+  <ul>
+    <li><a href="https://www.iise.org/" target="_blank">IISE – Institute of Industrial and Systems Engineers</a></li>
+    <li><a href="https://www.sciencedirect.com/journal/iiie-transactions" target="_blank">ScienceDirect – Industrial Engineering Research</a></li>
+    <li><a href="https://www.edx.org/learn/industrial-engineering" target="_blank">edX – Free Industrial Engineering Courses</a></li>
+    <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate – Industrial Engineering Papers & Projects</a></li>
+    <li><a href="https://www.engineeringtoolbox.com/" target="_blank">Engineering Toolbox – Tools & References for Industrial Applications</a></li>
+     <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Industrial Engineering Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+<div class="section">
+  <h2>Best For Students Who</h2>
+  <p>(Traits and interests that suit a career in the Industrial field)</p>
+
+  <ul>
+    <li>Enjoy problem-solving and optimizing processes.</li>
+    <li>Are interested in machines, technology, and production.</li>
+    <li>Want a career combining engineering, management, and technology.</li>
+    <li>Are detail-oriented and safety-conscious.</li>
+    <li>Like analyzing workflows and improving efficiency.</li>
+    <li>Have an interest in automation, robotics, and industrial innovations.</li>
+  </ul>
+</div>
+
+<!-- HOW TO GET INTO INDUSTRIAL FIELD (FLOWCHART) -->
+<div class="section">
+  <h2>How to Get into Industrial Field</h2>
+  <p>(Step-by-step pathway from school to career)</p>
+  <div class="flowchart-vertical">
+    
+    <div class="flow-step">
+      <i class="fas fa-school"></i>
+      <p>Complete 10th Grade (Focus on Science & Math)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-book"></i>
+      <p>Choose Science Stream in 11th–12th (Physics, Chemistry, Mathematics, Optional Economics/Computer Science)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i>
+      <p>Prepare & Appear for Engineering Entrance Exams (JEE, State CET, or University Exams)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-university"></i>
+      <p>Enroll in B.E/B.Tech in Industrial, Mechanical, Production, or Manufacturing Engineering</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-tools"></i>
+      <p>Gain Practical Experience through Internships, Industrial Training, and Projects</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-graduation-cap"></i>
+      <p>Pursue Postgraduate Specialization (M.Tech/MBA in Industrial Management, Operations, Supply Chain, or Automation)</p>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <i class="fas fa-industry"></i>
+      <p>Build a Career: Industrial Engineer, Production Manager, Quality Analyst, Supply Chain Specialist, HSE Officer, or Automation Engineer</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- STYLES -->
+<style>
+.flowchart-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-step i {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 6px;
+}
+
+.flow-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
+  border-color: #ffcc00;
+}
+
+.flow-arrow {
+  font-size: 24px;
+  color: #ffcc00;
+}
+</style>
+
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </main>
+</body>
+</html>

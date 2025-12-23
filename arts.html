@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arts</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+        <li></li>
+        <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Arts</h1>
+ <p> Arts (also called Humanities) is a field of study that focuses on human society, culture, history, philosophy, and creativity. It deals with critical thinking, communication, social awareness, and exploring human experiences.</p>
+  </div>
+
+ <div class="section">
+  <h2>Key Areas of Study</h2>
+  <p>(the main subjects and topics that u will typically learn during ur course)</p>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-landmark"></i>
+      <h3>History</h3>
+      <p>The study of past events, civilizations, and cultures.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-gavel"></i>
+      <h3>Political Science</h3>
+      <p>The study of government systems, political behavior, and public policies.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-globe-americas"></i>
+      <h3>Geography</h3>
+      <p>The study of Earth’s landscapes, environments, and human interactions with them.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-coins"></i>
+      <h3>Economics</h3>
+      <p>The study of production, distribution, and consumption of goods and services.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-brain"></i>
+      <h3>Psychology</h3>
+      <p>The scientific study of the human mind, emotions, and behavior.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-users"></i>
+      <h3>Sociology</h3>
+      <p>The study of society, social institutions, and human relationships.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Philosophy</h3>
+      <p>The study of fundamental questions about existence, knowledge, and ethics.</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-book-open"></i>
+      <h3>Literature / Languages</h3>
+      <p>The study of written works, communication, and linguistic expression.</p>
+    </div>
+<div class="study-box">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Fine Arts</h3>
+      <p>The creative expression of ideas through visual arts, music, dance, or theatre.</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome link (add in head if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+      <li>Critical thinking & analysis</li>
+      <li>Communication & public speaking</li>
+      <li>Research and writing skills</li>
+      <li>Creativity & imagination</li>
+      <li>Social and cultural awareness</li>
+      <li>Problem-solving and decision-making</li>
+      <li>Emotional intelligence & empathy</li>
+    </ul>
+  </div>
+ <div class="section">
+  <h2>Useful Websites for Arts Careers</h2>
+  <ul>
+    <li><a href="https://www.artsy.net/" target="_blank">Artsy – Art Galleries, Artists, and Exhibitions</a></li>
+    <li><a href="https://www.khanacademy.org/humanities/art-history" target="_blank">Khan Academy – Art History Resources</a></li>
+    <li><a href="https://www.edx.org/learn/arts" target="_blank">edX – Free Arts Courses</a></li>
+    <li><a href="https://www.deviantart.com/" target="_blank">DeviantArt – Artist Community & Inspiration</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Arts and Humanities Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+  <div class="section">
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Civil Services (IAS, IPS, IFS)</li>
+      <li>Lawyer / Judge / Legal Advisor</li>
+      <li>Journalist / Editor / Writer</li>
+      <li>Psychologist / Counselor</li>
+      <li>Historian / Archivist</li>
+      <li>Economist / Policy Analyst</li>
+      <li>Social Worker / NGO Professional</li>
+      <li>Teacher / Professor</li>
+      <li>Artist / Performer / Designer</li>
+      <li>International Relations / Diplomacy</li>
+    </ul> 
+ </div>
+
+  <div class="section">
+    <h2>Best for students who </h2>
+    <ul>
+      <li>Enjoy reading, writing, and debating</li>
+      <li>Have strong communication and analytical skills</li>
+      <li>Are interested in history, culture, society, or politics</li>
+      <li>Want careers in law, civil services, teaching, or media</li>
+      <li>Prefer theory, discussion, and research over lab-based studies</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Not suitable for students who</h2>
+<li>Prefer practical/technical fields (like engineering/medicine)</li>
+
+ <li>Do not enjoy theory, reading, or essay writing</li>
+
+ <li>Find social sciences and humanities less engaging</li>
+ <li>Want only high-paying jobs in technology or finance without interest in arts subjects</li>
+ 
+</div>
+
+<div class="section">
+    <h2>Courses in Arts</h2>
+    <ol>
+     <li>Undergraduate (UG)</li>
+      <ul>
+       <li>B.A. (Bachelor of Arts) in: History, Political Science, Economics, Psychology, English, Sociology, Philosophy, Fine Arts, Journalism, etc.</li>
+       <li>BFA (Bachelor of Fine Arts)</li>
+         <li>BJMC (Bachelor of Journalism & Mass Communication)</li>
+<li>B.Ed. (for Teaching)</li>
+</ul>
+<li>Postgraduate (PG)</li>
+<ul>
+<li>M.A. (Master of Arts) in all specializations</li>
+<li>MFA (Master of Fine Arts)</li>
+<li>MJMC (Master of Journalism & Mass Communication)</li>
+<li>M.Ed.</li> 
+</ul>
+<li>Doctoral (Ph.D.)</li>
+<ul>
+<li>Ph.D. in History, Political Science, Psychology, Sociology, Economics, etc.</li>
+<li>Ph.D. in Fine Arts / Performing Arts</li>
+<li>Research in International Relations, Cultural Studies, etc.</li>
+</ul>
+</ol>
+</div>
+
+</style>
+<!-- Add Font Awesome for icons in <head> -->
+<div class="section">
+  <h2>Literature Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose Humanities/Arts</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Appear for Entrance Exams</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Undergraduation
+      <small>(B.A. / BFA / BJMC / B.Ed.)
+</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i><br>
+      Postgraduation
+      <small>(M.A. / MFA / MJMC / M.Ed.)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Ph.D.
+      <small>Ph.D. / Professional Courses (Law, Civil Services, etc.)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-rocket"></i><br>
+      Careers
+      <small>(Civil Services, Teaching, Journalism, Law, Psychology, etc.)</small>
+    </div>
+  </div>
+</div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  /* Hover effects */
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  /* Arrow animation */
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<!-- Font Awesome link (only once in head) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>

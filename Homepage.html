@@ -1,0 +1,1114 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Guide</title>
+   
+   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+ <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      background-size: cover;
+    }
+     @keyframes gradientBG {
+     0% { background-position: 100% 50%; }
+      50% { background-position: 0% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+.sidebar {
+      width: 250px;
+      background-color: #052c50;
+      color: white;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      color: #f39c12;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px 15px;
+      border-bottom: 1px solid #003566;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar ul li:hover {
+      background-color: #003566;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #052c50;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar nav a:hover {
+      color: #f39c12;
+    }
+
+    .content {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+   .form-container {
+  background: rgba(0, 0, 0, 0.4); /* translucent dark glass */
+  backdrop-filter: blur(10px);    /* blurred glass effect */
+  color: #00ffff; /* neon aqua text */
+  border: 1px solid #00ffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff80; /* soft neon glow */
+  max-width: 800px;
+  margin: auto;
+}
+  .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5dfeb;
+      border-radius: 5px;
+    }
+
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+  color: #f1f2f5;
+}
+
+
+
+    .form-group select[multiple] {
+      height: auto;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background-color: #1f2f9d;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #80d8ee83; 
+    }
+
+    footer {
+      background-color: #052c50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+      /* Scrollbar styling for WebKit browsers */
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="miniform.html"><strong>Miniform</strong></a></li>
+    </ul>
+    <h2>Career Fields</h2>
+    <ul>
+       <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h1>Career Guide</h1>
+      <nav>
+         <a href="#home">Home</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#form">form</a>
+      </nav>
+    </div>
+    <div class="content" >
+       <div id="home">
+      <div style="margin-bottom: 30px; color: white; padding: 20px;">
+        <h2>WHERE DREAMS MEET DIRECTION</h2>
+        <p>Career Guide is a smart, interactive platform designed to help individuals discover and plan their professional journey. Whether you are a student exploring your interests, a graduate deciding on a field, this tool assists in identifying the right career fields based on your habits,interests and long-term goals.</p>
+        <p>Our website here guides to choose your dream direction that your interested in ,and to make ur decision confident and navigate your dream direction that ur intrested in. </p>
+      </div>
+        </div>
+<div style="margin-bottom: 30px; color: white; padding: 20px;">
+<div id="aboutus">
+ <h3>About Us:</h3>
+<p>Career, one of the biggest decisions of your life is also the toughest one to make.</p>
+<p>Even the bravest ones out there might feel a little nervous, and doubt their choices after some time.</p>
+<p>But, you don’t have to worry because we are here to help you navigate your path, a path that leads to success without any doubts and regrets.</p>
+<p>We can only help you understand your path and set a runway. Your successful life depends on whether you take a flight with courage and confidence or backway with fear.</p>
+</div>
+<div id="services">
+<h3>Services</h3>
+<p>-We suggest career options based on your interests.</p>
+<p>-We provide information about various courses.</p>
+<p>-We will navigate you to various online learning platforms.</p>
+<p>-Help you understand your career goals.</p>
+<p>-Improve your future vision.</p>
+<p>-Information about new evolved courses.</p>
+<p>Our main objective is to stop you from doing the same mistake(Choosing the wrong course or career without any guidance (or) under peer pressure) many others have been doing since generations.</p>
+</div>
+</div>
+
+
+
+<div class="form-container" id="form">
+  <h2>User Details</h2>
+  <form id="careerForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="qualifications">Qualifications:</label>
+      <input type="text" id="qualifications" name="qualifications" />
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" />
+    </div>
+    <div class="form-group">
+      <label for="habits">Habits:</label>
+      <select id="habits" name="habits" multiple>
+        <option value="Drawing">Drawing</option>
+        <option value="Painting">Painting</option>
+        <option value="Writing">Writing</option>
+        <option value="Designing">Designing</option>
+        <option value="Photography">Photography</option>
+        <option value="Video editing">Video editing</option>
+        <option value="Playing a musical instrument">Playing a musical instrument</option>
+        <option value="DIY or crafting">DIY or crafting</option>
+        <option value="Reading books">Reading books</option>
+        <option value="Watching educational videos">Watching educational videos</option>
+        <option value="Listening to podcasts">Listening to podcasts</option>
+        <option value="Researching topics online">Researching topics online</option>
+        <option value="Learning new languages">Learning new languages</option>
+        <option value="Exploring new tech/tools">Exploring new tech/tools</option>
+        <option value="Coding or programming">Coding or programming</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Creating content">Creating content</option>
+        <option value="Blogging">Blogging</option>
+        <option value="App or web designing">App or web designing</option>
+        <option value="Building digital products">Building digital products</option>
+        <option value="Exercising">Exercising</option>
+        <option value="Meditation">Meditation</option>
+        <option value="Cooking">Cooking</option>
+        <option value="Gardening">Gardening</option>
+        <option value="Volunteering">Volunteering</option>
+        <option value="Mentoring">Mentoring</option>
+        <option value="Organizing events">Organizing events</option>
+        <option value="Public speaking">Public speaking</option>
+        <option value="Team sports">Team sports</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="interests">Interests:</label>
+      <select id="interests" name="interests" multiple>
+        <option value="Work at one place (desk job)">Work at one place (desk job)</option>
+        <option value="Work from home">Work from home</option>
+        <option value="Move around while working">Move around while working</option>
+        <option value="Travel for work">Travel for work</option>
+        <option value="Work outdoors">Work outdoors</option>
+        <option value="Work with people">Work with people</option>
+        <option value="Meet new people regularly">Meet new people regularly</option>
+        <option value="Mix of indoor and outdoor work">Mix of indoor and outdoor work</option>
+        <option value="Flexible timing">Flexible timing</option>
+        <option value="Hands-on/manual work">Hands-on/manual work</option>
+        <option value="Digital/online work">Digital/online work</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="vision">Career Goal / Vision for Future:</label>
+      <textarea id="vision" name="vision"></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+
+<!-- ✅ Suggestion Result Box -->
+<div id="resultBox" style="display:none; margin-top:20px; padding:15px; border-radius:8px; background:#f0f8ff;"></div>
+
+<footer>
+  <p><strong>Contact Us:</strong> career.guide@example.com | +1 (800) 123-4567</p>
+</footer>
+
+<!-- ✅ Fixed script -->
+<script>
+  const scriptURL ='https://script.google.com/macros/s/AKfycbxmJk4UePPCPv6wJd_n-KziHDMAHl7nyXqrPQkrTpjPdi-liTSahVj1esiGfs6ykoT3XA/exec';
+  const form = document.getElementById("careerForm");
+  const resultBox = document.getElementById("resultBox");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    // Convert multiple selections into comma-separated strings
+    const habits = [...formData.getAll("habits")];
+    const interests = [...formData.getAll("interests")];
+    formData.set("habits", habits.join(", "));
+    formData.set("interests", interests.join(", "));
+
+    // --- Simple Career Suggestion Logic ---
+    if (habits.includes("Drawing") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🎨 Careers like Graphic Design, CAD Drafting, or Architecture (desk-based creative work).";
+} else if (habits.includes("Drawing") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Illustrator, Digital Artist, or Online Art Tutor are great home-based drawing careers.";
+} else if (habits.includes("Drawing") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Careers such as Interior Designer, Fashion Illustrator, or Live Sketch Artist let you stay mobile.";
+} else if (habits.includes("Drawing") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Careers like Travel Sketch Artist, Art Journalist, or Cultural Illustrator combine drawing with travel.";
+} else if (habits.includes("Drawing") && interests.includes("Work outdoors")) {
+  suggestion = "🌿 Landscape Artist, Street Sketcher, or Nature Illustrator are outdoor drawing careers.";
+} else if (habits.includes("Drawing") && interests.includes("Work with people")) {
+  suggestion = "👥 Careers such as Art Teacher, Design Team Member, or Workshop Artist let you collaborate closely.";
+} else if (habits.includes("Drawing") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Live Caricature Artist, Portrait Illustrator, or Art Event Presenter suit this combo.";
+} else if (habits.includes("Drawing") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Urban Sketcher, Architecture Illustrator, or Creative Field Artist can match this mix.";
+} else if (habits.includes("Drawing") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Illustrator, Concept Artist, or Comic Book Creator offer flexible schedules.";
+} else if (habits.includes("Drawing") && interests.includes("Hands-on/manual work")) {
+  suggestion = "✋ Careers like Mural Painting, Tattoo Artist, or Handmade Artistry are hands-on drawing careers.";
+} else if (habits.includes("Drawing") && interests.includes("Digital/online work")) {
+  suggestion = "💻 UI/UX Designer, Digital Illustrator, or Animation Artist use digital drawing tools.";
+}
+
+// PAINTING × INTERESTS
+if (habits.includes("Painting") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🎨 Careers like Art Restoration, CAD Design, or Graphic Design in studios/offices could fit your painting skills.";
+} else if (habits.includes("Painting") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Painter, Online Art Instructor, or Selling Artworks Online are great home-based painting careers.";
+} else if (habits.includes("Painting") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Careers like Mural Artist, Art Workshop Conductor, or Traveling Art Exhibitor may suit your painting interest.";
+} else if (habits.includes("Painting") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Art Curator, Traveling Art Conservator, or International Art Exhibitions Organizer could be ideal.";
+} else if (habits.includes("Painting") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Landscape Artist, Street Painter, or Environmental Art Creator may fit your passion.";
+} else if (habits.includes("Painting") && interests.includes("Work with people")) {
+  suggestion = "👥 Careers like Art Therapist, Art Teacher, or Community Art Program Leader would match painting and people skills.";
+} else if (habits.includes("Painting") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Live Art Performer, Art Exhibition Organizer, or Cultural Exchange Artist are great fits.";
+} else if (habits.includes("Painting") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Careers like Event Decoration Artist, Art Installation Designer, or Public Art Creator would be a balance.";
+} else if (habits.includes("Painting") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Artist, Art Content Creator, or Personal Commission Painter allow flexible schedules.";
+} else if (habits.includes("Painting") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🖌️ Careers like Canvas Painter, Muralist, or Restoration Specialist suit manual creativity.";
+} else if (habits.includes("Painting") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Digital Painting, Concept Art, or Animation Background Artist could combine painting with digital work.";
+}
+
+// WRITING × INTERESTS
+if (habits.includes("Writing") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📝 Careers like Copywriting, Technical Writing, or Editorial Writing in offices could fit your writing skills.";
+} else if (habits.includes("Writing") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Writer, Blogger, or Online Content Creator are great home-based writing careers.";
+} else if (habits.includes("Writing") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Careers like Travel Writer, Field Journalist, or Script Researcher may suit your writing interest.";
+} else if (habits.includes("Writing") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Blogger, Foreign Correspondent, or International Media Writer could be ideal.";
+} else if (habits.includes("Writing") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Nature Writer, Environmental Journalist, or Travelogue Author may fit your passion.";
+} else if (habits.includes("Writing") && interests.includes("Work with people")) {
+  suggestion = "👥 Careers like Speechwriter, Workshop Facilitator, or Writing Coach would match writing and people skills.";
+} else if (habits.includes("Writing") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Journalist, Interview Writer, or Cultural Reporter are great fits.";
+} else if (habits.includes("Writing") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Careers like Event Script Writer, Documentary Writer, or Lifestyle Blogger would be a balance.";
+} else if (habits.includes("Writing") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Writer, Novelist, or Creative Blogger allow flexible schedules.";
+} else if (habits.includes("Writing") && interests.includes("Hands-on/manual work")) {
+  suggestion = "✍️ Careers like Scriptwriter, Screenplay Developer, or Playwright suit manual creativity in writing.";
+} else if (habits.includes("Writing") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Content Writer, SEO Specialist, or E-book Author could combine writing with digital work.";
+}
+
+// DESIGNING × INTERESTS
+if (habits.includes("Designing") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Careers like Interior Designer, Fashion Designer, or CAD Designer in office environments may suit you.";
+} else if (habits.includes("Designing") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Graphic Designer, UX/UI Designer, or Online Fashion Designer are great home-based options.";
+} else if (habits.includes("Designing") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Event Designer, Set Designer, or Field Interior Designer are good fits if you like moving while working.";
+} else if (habits.includes("Designing") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Fashion Designer (international shows), Exhibition Designer, or Global Product Designer could be ideal.";
+} else if (habits.includes("Designing") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Landscape Designer, Outdoor Event Designer, or Environmental Designer may suit you.";
+} else if (habits.includes("Designing") && interests.includes("Work with people")) {
+  suggestion = "👥 Careers like Interior Designer, Fashion Consultant, or Creative Director involve strong collaboration.";
+} else if (habits.includes("Designing") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Careers like Fashion Show Designer, Event Designer, or Public Exhibition Designer are excellent matches.";
+} else if (habits.includes("Designing") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Exhibition Designer, Architectural Designer, or Event Set Designer balance both worlds.";
+} else if (habits.includes("Designing") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Designer, Online Creative Consultant, or Independent Product Designer allow flexible schedules.";
+} else if (habits.includes("Designing") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Careers like Furniture Designer, Craft Designer, or Product Prototype Designer are hands-on.";
+} else if (habits.includes("Designing") && interests.includes("Digital/online work")) {
+  suggestion = "💻 UX/UI Designer, Web Designer, or Digital Product Designer combine creativity with technology.";
+}
+
+// PHOTOGRAPHY × INTERESTS
+if (habits.includes("Photography") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Studio Photographer, Photo Editor, or Product Photographer (office-based) may suit you.";
+} else if (habits.includes("Photography") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Photographer, Stock Photo Contributor, or Online Photo Editor are great home options.";
+} else if (habits.includes("Photography") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Event Photographer, Street Photographer, or Travel Blogger Photographer could be a good fit.";
+} else if (habits.includes("Photography") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Photographer, Wildlife Photographer, or Photojournalist would let you explore the world.";
+} else if (habits.includes("Photography") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Careers like Wildlife Photographer, Nature Photographer, or Sports Photographer suit outdoor work.";
+} else if (habits.includes("Photography") && interests.includes("Work with people")) {
+  suggestion = "👥 Portrait Photographer, Wedding Photographer, or Lifestyle Photographer focus on people.";
+} else if (habits.includes("Photography") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Careers like Event Photographer, Fashion Photographer, or Documentary Photographer match well.";
+} else if (habits.includes("Photography") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Freelance Photographer, Fashion Photographer, or Event Photographer balance both indoor and outdoor.";
+} else if (habits.includes("Photography") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Photographer, Social Media Content Photographer, or Stock Image Creator allow flexibility.";
+} else if (habits.includes("Photography") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Studio Setup Photographer, Film Photographer, or Darkroom Developer involve hands-on work.";
+} else if (habits.includes("Photography") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Digital Photographer, Photo Editor, or Content Creator combine photography with online platforms.";
+}
+
+// VIDEO EDITING × INTERESTS
+if (habits.includes("Video editing") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Corporate Video Editor, Studio Editor, or Post-production Specialist (office-based).";
+} else if (habits.includes("Video editing") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Video Editor, YouTube Content Editor, or Online Media Editor are great remote options.";
+} else if (habits.includes("Video editing") && interests.includes("Move around while working")) {
+  suggestion = "🚶 On-site Event Video Editor, Field Videographer + Editor, or Documentary Production Assistant.";
+} else if (habits.includes("Video editing") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Vlogger Editor, Film Crew Editor, or Media House Editor who travels for shoots.";
+} else if (habits.includes("Video editing") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Videographer + Editor, Travel Content Editor, or Adventure Sports Video Editor.";
+} else if (habits.includes("Video editing") && interests.includes("Work with people")) {
+  suggestion = "👥 Team-based Film Editor, Wedding Video Editor, or Collaboration Project Editor.";
+} else if (habits.includes("Video editing") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Event Video Editor, Corporate Video Production Editor, or Media Agency Editor.";
+} else if (habits.includes("Video editing") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Freelance Videographer + Editor, Film Production Editor, or Travel Documentary Editor.";
+} else if (habits.includes("Video editing") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Editor, Online Content Editor, or Short-form Video Creator (Reels/TikTok/Shorts).";
+} else if (habits.includes("Video editing") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Video Equipment Handler + Editor, Film Editing Technician, or Motion Graphics Specialist.";
+} else if (habits.includes("Video editing") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Online Content Video Editor, Social Media Editor, or Animation/Effects Specialist.";
+}
+
+// PLAYING A MUSICAL INSTRUMENT × INTERESTS
+if (habits.includes("Playing a musical instrument") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Music Composer, Studio Session Musician, or Instrument Instructor (office/studio-based).";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Music Teacher, Remote Composer, or YouTube Instrumentalist.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Live Performer, Band Member, or Orchestra Musician.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Touring Musician, Concert Performer, or International Session Artist.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Street Performer, Festival Band Artist, or Open-air Concert Performer.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Work with people")) {
+  suggestion = "👥 Band Member, Orchestra Artist, or Collaborative Performer.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Touring Performer, Music Workshop Conductor, or Community Event Musician.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Festival Performer, Music Teacher + Performer, or Recording & Live Session Artist.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Musician, Online Tutor, or Part-time Performer.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Instrument Maker/Repairer + Performer, Studio Setup Musician, or Acoustic Instrument Specialist.";
+} else if (habits.includes("Playing a musical instrument") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Digital Composer, Online Music Producer, or Remote Instrumental Collaborator.";
+}
+
+// DIY OR CRAFTING × INTERESTS
+if (habits.includes("DIY or crafting") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Product Designer, Jewelry Maker, or Craft Business Owner (studio-based).";
+} else if (habits.includes("DIY or crafting") && interests.includes("Work from home")) {
+  suggestion = "🏠 Handmade Goods Seller (Etsy, Amazon), Remote Craft Instructor, or Online Business Owner.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Event Decorator, Interior Crafts Designer, or Art Installation Worker.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Traveling Artisan, Exhibition Craft Seller, or International Workshop Trainer.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Installation Artist, Garden Decor Maker, or Festival Craft Vendor.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Work with people")) {
+  suggestion = "👥 Craft Workshop Conductor, Art Teacher, or Team Project Designer.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Exhibition Seller, Craft Fair Participant, or Community Art Organizer.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Craft Stall Owner, Seasonal Market Seller, or Interior & Outdoor Decor Designer.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Crafter, Part-time Craft Teacher, or Online Seller with flexible hours.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Carpenter, Handmade Product Creator, or Craft-based Technician.";
+} else if (habits.includes("DIY or crafting") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Online Craft Store Owner, Digital DIY Content Creator, or YouTube Craft Instructor.";
+}
+
+// READING BOOKS × INTERESTS
+if (habits.includes("Reading books") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📚 Librarian, Editor, Research Analyst, or Academic Writer.";
+} else if (habits.includes("Reading books") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Editor, Book Reviewer, or Online Tutor.";
+} else if (habits.includes("Reading books") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Field Researcher, Book Sales Representative, or Traveling Literacy Coach.";
+} else if (habits.includes("Reading books") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Writer, International Researcher, or Educational Consultant.";
+} else if (habits.includes("Reading books") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Nature Writer, Outdoor Literacy Volunteer, or Field Research Assistant.";
+} else if (habits.includes("Reading books") && interests.includes("Work with people")) {
+  suggestion = "👥 Teacher, Workshop Facilitator, or Book Club Organizer.";
+} else if (habits.includes("Reading books") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Literary Event Host, Publishing Agent, or Storytelling Coach.";
+} else if (habits.includes("Reading books") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Educational Field Guide, Museum Researcher, or Mobile Librarian.";
+} else if (habits.includes("Reading books") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Writer, Online Course Creator, or Proofreader.";
+} else if (habits.includes("Reading books") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Book Binder, Archivist, or Museum Exhibit Worker.";
+} else if (habits.includes("Reading books") && interests.includes("Digital/online work")) {
+  suggestion = "💻 eBook Writer, Online Editor, or Digital Publishing Specialist.";
+}
+
+// WATCHING EDUCATIONAL VIDEOS × INTERESTS
+if (habits.includes("Watching educational videos") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🖥️ Research Analyst, Data Entry Specialist, or Technical Writer.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Tutor, eLearning Content Creator, or Remote Researcher.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Educational Workshop Trainer, Field Research Assistant, or Learning Coordinator.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Educational Consultant, Corporate Trainer, or International Researcher.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Environmental Educator, Outdoor Workshop Trainer, or Field Documentarian.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Work with people")) {
+  suggestion = "👥 Teacher, Workshop Facilitator, or Learning Coach.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Corporate Trainer, Seminar Speaker, or Education Event Coordinator.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Field Educator, Traveling Teacher, or Science Communicator.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Tutor, Online Course Reviewer, or Virtual Assistant (Education).";
+} else if (habits.includes("Watching educational videos") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Lab Assistant, Technical Trainer, or DIY Workshop Instructor.";
+} else if (habits.includes("Watching educational videos") && interests.includes("Digital/online work")) {
+  suggestion = "💻 eLearning Developer, YouTube Educator, or Instructional Designer.";
+}
+
+// LISTENING TO PODCASTS × INTERESTS
+if (habits.includes("Listening to podcasts") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🖥️ Content Curator, Podcast Researcher, or Script Writer.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Work from home")) {
+  suggestion = "🏠 Podcast Editor, Remote Content Creator, or Social Media Manager.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Podcast Reporter, Event Coverage Specialist, or Street Interviewer.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Blogger with Podcasts, International Interview Host, or Traveling Journalist.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Nature Podcaster, Outdoor Audio Journalist, or Environmental Storyteller.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Work with people")) {
+  suggestion = "👥 Talk Show Host, Communication Coach, or HR Training Specialist.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Interview Host, Event Podcaster, or Networking Coordinator.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Field Podcaster, Documentary Host, or Travel Storyteller.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Podcaster, Voiceover Artist, or Remote Content Strategist.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Audio Technician, Podcast Equipment Specialist, or Studio Assistant.";
+} else if (habits.includes("Listening to podcasts") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Podcast Producer, Online Host, or Digital Media Specialist.";
+}
+
+// RESEARCHING TOPICS ONLINE × INTERESTS
+if (habits.includes("Researching topics online") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📊 Market Research Analyst, Data Entry Specialist, or Knowledge Manager.";
+} else if (habits.includes("Researching topics online") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Researcher, Online Tutor, or Virtual Assistant.";
+} else if (habits.includes("Researching topics online") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Field Research Assistant, Survey Collector, or Academic Data Gatherer.";
+} else if (habits.includes("Researching topics online") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Market Analyst, Travel Researcher, or Global Journalist.";
+} else if (habits.includes("Researching topics online") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Environmental Researcher, Agricultural Data Analyst, or Wildlife Documentation Specialist.";
+} else if (habits.includes("Researching topics online") && interests.includes("Work with people")) {
+  suggestion = "👥 Research Coordinator, HR Analyst, or Social Research Specialist.";
+} else if (habits.includes("Researching topics online") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Field Researcher, Interview Specialist, or Market Survey Manager.";
+} else if (habits.includes("Researching topics online") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Anthropologist, Geo-Research Analyst, or Field & Online Researcher.";
+} else if (habits.includes("Researching topics online") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Research Writer, Part-Time Analyst, or Online Knowledge Consultant.";
+} else if (habits.includes("Researching topics online") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Lab Research Assistant, Experiment Technician, or Scientific Data Recorder.";
+} else if (habits.includes("Researching topics online") && interests.includes("Digital/online work")) {
+  suggestion = "💻 SEO Specialist, Data Analyst, or Online Knowledge Researcher.";
+}
+
+// LEARNING NEW LANGUAGES × INTERESTS
+if (habits.includes("Learning new languages") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 Translator, Content Localizer, or Language Analyst.";
+} else if (habits.includes("Learning new languages") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Language Tutor, Freelance Translator, or Subtitling Specialist.";
+} else if (habits.includes("Learning new languages") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Tour Guide, International Coordinator, or Multilingual Customer Service Specialist.";
+} else if (habits.includes("Learning new languages") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Diplomat, International Business Executive, or Flight Attendant.";
+} else if (habits.includes("Learning new languages") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Cultural Liaison, Travel Blogger, or Field Language Researcher.";
+} else if (habits.includes("Learning new languages") && interests.includes("Work with people")) {
+  suggestion = "👥 Interpreter, Language Trainer, or HR Diversity Specialist.";
+} else if (habits.includes("Learning new languages") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Tourist Guide, International Relations Officer, or Airline Staff.";
+} else if (habits.includes("Learning new languages") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Foreign Exchange Coordinator, Linguistic Researcher, or Travel Organizer.";
+} else if (habits.includes("Learning new languages") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Interpreter, Online Language Coach, or Subtitler.";
+} else if (habits.includes("Learning new languages") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Cultural Exchange Volunteer, International Aid Worker, or NGO Field Worker.";
+} else if (habits.includes("Learning new languages") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Language App Developer, Online Content Translator, or Remote Tutor.";
+}
+
+// EXPLORING NEW TECH/TOOLS × INTERESTS
+if (habits.includes("Exploring new tech/tools") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💼 IT Specialist, Systems Analyst, or Product Tester.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Work from home")) {
+  suggestion = "🏠 Remote Tech Reviewer, Online Product Tester, or Virtual IT Support.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Field Tech Consultant, Technical Sales Engineer, or Hardware Specialist.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Tech Consultant, Global Product Trainer, or Technical Sales Manager.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Field Engineer, Renewable Energy Technician, or Outdoor Tech Installer.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Work with people")) {
+  suggestion = "👥 Tech Trainer, Product Demonstrator, or Innovation Consultant.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Startup Evangelist, Tech Sales Specialist, or Product Launch Coordinator.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Field Research Technician, Smart Devices Installer, or Technical Coordinator.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Tech Blogger, Independent App Tester, or Remote IT Support.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Robotics Technician, Electronics Repair Specialist, or Prototype Builder.";
+} else if (habits.includes("Exploring new tech/tools") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Software Tester, Tech Blogger, or Digital Product Reviewer.";
+}
+
+// CODING OR PROGRAMMING × INTERESTS
+if (habits.includes("Coding or programming") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💻 Software Engineer, Data Analyst, or Backend Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Work from home")) {
+  suggestion = "🏠 Remote Developer, Freelance Programmer, or App Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Technical Consultant, IT Support Engineer, or On-site Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Tech Consultant, International Software Trainer, or IT Project Manager.";
+} else if (habits.includes("Coding or programming") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Field IoT Engineer, Robotics Programmer, or Smart Systems Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Work with people")) {
+  suggestion = "👥 Software Trainer, Agile Team Developer, or Tech Mentor.";
+} else if (habits.includes("Coding or programming") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Tech Community Organizer, Developer Evangelist, or Startup Co-founder.";
+} else if (habits.includes("Coding or programming") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Embedded Systems Engineer, IoT Specialist, or Robotics Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Developer, Indie Game Developer, or Open Source Contributor.";
+} else if (habits.includes("Coding or programming") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Robotics Programmer, Hardware Coder, or Embedded Systems Developer.";
+} else if (habits.includes("Coding or programming") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Web Developer, App Developer, or Data Scientist.";
+}
+
+// GAMING × INTERESTS
+if (habits.includes("Gaming") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🎮 Game Tester, Game Designer, or Esports Analyst.";
+} else if (habits.includes("Gaming") && interests.includes("Work from home")) {
+  suggestion = "🏠 Streamer, Game Developer, or Gaming Content Creator.";
+} else if (habits.includes("Gaming") && interests.includes("Move around while working")) {
+  suggestion = "🚶 VR Arcade Operator, Gaming Event Staff, or Esports Coach.";
+} else if (habits.includes("Gaming") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Esports Player, Game Reviewer, or Tournament Organizer.";
+} else if (habits.includes("Gaming") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 AR/VR Field Developer, Outdoor Game Designer, or Gaming Event Organizer.";
+} else if (habits.includes("Gaming") && interests.includes("Work with people")) {
+  suggestion = "👥 Gaming Coach, Multiplayer Game Designer, or Esports Manager.";
+} else if (habits.includes("Gaming") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Gaming Community Manager, Event Host, or Game Journalist.";
+} else if (habits.includes("Gaming") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ AR Game Developer, VR Experience Designer, or Gaming Event Organizer.";
+} else if (habits.includes("Gaming") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Streamer, Indie Game Developer, or Freelance Game Tester.";
+} else if (habits.includes("Gaming") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ VR Hardware Technician, Gaming Hardware Modder, or Arcade Machine Engineer.";
+} else if (habits.includes("Gaming") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Game Developer, Esports Player, or Online Streamer.";
+}
+
+// CREATING CONTENT × INTERESTS
+if (habits.includes("Creating content") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📝 Social Media Manager, Content Strategist, or Copywriter.";
+} else if (habits.includes("Creating content") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Content Creator, YouTuber, or Blogger.";
+} else if (habits.includes("Creating content") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Travel Vlogger, Event Content Creator, or Documentary Maker.";
+} else if (habits.includes("Creating content") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Travel Blogger, Journalist, or Brand Influencer.";
+} else if (habits.includes("Creating content") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Nature Photographer, Outdoor Vlogger, or Environmental Content Creator.";
+} else if (habits.includes("Creating content") && interests.includes("Work with people")) {
+  suggestion = "👥 Podcast Host, Interviewer, or Social Media Consultant.";
+} else if (habits.includes("Creating content") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Lifestyle Vlogger, Event Reporter, or Talk Show Host.";
+} else if (habits.includes("Creating content") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Documentary Filmmaker, Travel Vlogger, or Adventure Blogger.";
+} else if (habits.includes("Creating content") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelancer, Independent Blogger, or YouTuber.";
+} else if (habits.includes("Creating content") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ DIY Content Creator, Craft Vlogger, or Tutorial Maker.";
+} else if (habits.includes("Creating content") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Digital Marketer, Social Media Influencer, or Online Content Writer.";
+}
+
+// BLOGGING × INTERESTS
+if (habits.includes("Blogging") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📝 Professional Blogger, Content Strategist, or Copywriter.";
+} else if (habits.includes("Blogging") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Blogger, SEO Writer, or Niche Blogger.";
+} else if (habits.includes("Blogging") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Travel Blogger, Lifestyle Blogger, or Event Reviewer.";
+} else if (habits.includes("Blogging") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Blogger, Travel Journalist, or Cultural Writer.";
+} else if (habits.includes("Blogging") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Nature Blogger, Wildlife Writer, or Adventure Blogger.";
+} else if (habits.includes("Blogging") && interests.includes("Work with people")) {
+  suggestion = "👥 Community Blogger, Social Issues Writer, or Interview Blogger.";
+} else if (habits.includes("Blogging") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Lifestyle Blogger, Event Blogger, or Networking Writer.";
+} else if (habits.includes("Blogging") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Travel & Lifestyle Blogger, Food Blogger, or Field Reviewer.";
+} else if (habits.includes("Blogging") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Independent Blogger, Freelance Writer, or Part-time Blogger.";
+} else if (habits.includes("Blogging") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ DIY Blogger, Cooking Blogger, or Craft Blogging.";
+} else if (habits.includes("Blogging") && interests.includes("Digital/online work")) {
+  suggestion = "💻 Tech Blogger, SEO Specialist, or Online Content Creator.";
+}
+
+// APP OR WEB DESIGNING × INTERESTS
+if (habits.includes("App or web designing") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💻 UI/UX Designer, Frontend Developer, or Product Designer in a tech company.";
+} else if (habits.includes("App or web designing") && interests.includes("Work from home")) {
+  suggestion = "🏠 Freelance Web Designer, App Developer, or Remote UI/UX Specialist.";
+} else if (habits.includes("App or web designing") && interests.includes("Move around while working")) {
+  suggestion = "📱 Mobile App Consultant, On-site Web Designer, or Startup Tech Partner.";
+} else if (habits.includes("App or web designing") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Tech Consultant, IT Project Specialist, or Global Web Designer.";
+} else if (habits.includes("App or web designing") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Tech solutions for outdoor industries (Event Apps, Travel Websites, Smart Farming Tools).";
+} else if (habits.includes("App or web designing") && interests.includes("Work with people")) {
+  suggestion = "👥 UI/UX Researcher, Design Thinking Consultant, or Client-facing Web Designer.";
+} else if (habits.includes("App or web designing") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Startup Tech Collaborator, Web/App Solutions Consultant, or Agency Designer.";
+} else if (habits.includes("App or web designing") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Tech Solutions Designer for Travel, Events, or Hybrid Businesses.";
+} else if (habits.includes("App or web designing") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Web/App Designer, Independent Developer, or Remote Tech Worker.";
+} else if (habits.includes("App or web designing") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ App Tools for Crafts, DIY Design Websites, or Educational App Development.";
+} else if (habits.includes("App or web designing") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Full-stack Developer, UI/UX Designer, or Web App Specialist.";
+}
+
+// BUILDING DIGITAL PRODUCTS × INTERESTS
+if (habits.includes("Building digital products") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🏢 Product Manager, Software Developer, or Tech Entrepreneur.";
+} else if (habits.includes("Building digital products") && interests.includes("Work from home")) {
+  suggestion = "🏠 Independent App Creator, Digital Startup Founder, or Remote Product Developer.";
+} else if (habits.includes("Building digital products") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Startup Field Specialist, On-site Product Deployment Expert, or Tech Consultant.";
+} else if (habits.includes("Building digital products") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Startup Advisor, SaaS Consultant, or Global Product Developer.";
+} else if (habits.includes("Building digital products") && interests.includes("Work outdoors")) {
+  suggestion = "🌍 Tech products for agriculture, environment, or outdoor services.";
+} else if (habits.includes("Building digital products") && interests.includes("Work with people")) {
+  suggestion = "👥 Team-based Startup Builder, Product Manager, or Client-focused Developer.";
+} else if (habits.includes("Building digital products") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Startup Networking, Tech Sales Engineer, or Co-founder in a product company.";
+} else if (habits.includes("Building digital products") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ IoT Developer, Smart Product Creator, or Hybrid Tech Solutions Engineer.";
+} else if (habits.includes("Building digital products") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Independent Product Designer, Freelance Developer, or Startup Creator.";
+} else if (habits.includes("Building digital products") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ IoT Gadgets, Robotics, or DIY Tech Product Maker.";
+} else if (habits.includes("Building digital products") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 SaaS Developer, Online Product Creator, or Cloud Solutions Engineer.";
+}
+
+// EXERCISING × INTERESTS
+if (habits.includes("Exercising") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "💪 Fitness App Developer, Online Trainer, or Wellness Content Creator.";
+} else if (habits.includes("Exercising") && interests.includes("Work from home")) {
+  suggestion = "🏠 Virtual Fitness Coach, Online Workout Program Designer, or YouTube Fitness Creator.";
+} else if (habits.includes("Exercising") && interests.includes("Move around while working")) {
+  suggestion = "🏃 Personal Trainer, Fitness Instructor, or Gym Coach.";
+} else if (habits.includes("Exercising") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Fitness Consultant, Athlete, or Global Sports Trainer.";
+} else if (habits.includes("Exercising") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Bootcamp Trainer, Adventure Fitness Guide, or Sports Coach.";
+} else if (habits.includes("Exercising") && interests.includes("Work with people")) {
+  suggestion = "👥 Group Fitness Instructor, Wellness Consultant, or Physiotherapy Specialist.";
+} else if (habits.includes("Exercising") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Gym Trainer, Sports Team Coach, or Health Workshop Speaker.";
+} else if (habits.includes("Exercising") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Sports Scientist, Physiotherapist, or Hybrid Fitness Instructor.";
+} else if (habits.includes("Exercising") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Fitness Coach, Part-time Trainer, or Wellness Consultant.";
+} else if (habits.includes("Exercising") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Sports Physio, Athletic Trainer, or Fitness Equipment Specialist.";
+} else if (habits.includes("Exercising") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Online Fitness Trainer, Virtual Fitness App Specialist, or Wellness Influencer.";
+}
+
+// MEDITATION × INTERESTS
+if (habits.includes("Meditation") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🧘 Wellness Writer, Mindfulness Researcher, or Meditation App Developer.";
+} else if (habits.includes("Meditation") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Meditation Coach, Spiritual Content Creator, or Virtual Wellness Guide.";
+} else if (habits.includes("Meditation") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Yoga & Meditation Trainer, Traveling Wellness Coach, or Retreat Organizer.";
+} else if (habits.includes("Meditation") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Retreat Guide, Meditation Speaker, or Wellness Workshop Leader.";
+} else if (habits.includes("Meditation") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Mindfulness Trainer, Eco-Retreat Guide, or Nature Meditation Coach.";
+} else if (habits.includes("Meditation") && interests.includes("Work with people")) {
+  suggestion = "👥 Group Meditation Leader, Corporate Wellness Coach, or Therapist.";
+} else if (habits.includes("Meditation") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Public Speaker, Retreat Host, or Meditation Community Builder.";
+} else if (habits.includes("Meditation") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Wellness Coach balancing indoor classes & outdoor retreats.";
+} else if (habits.includes("Meditation") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Meditation Teacher, Online Wellness Consultant, or Mindfulness Blogger.";
+} else if (habits.includes("Meditation") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Yoga Equipment Designer, Wellness Product Maker, or Healing Arts Practitioner.";
+} else if (habits.includes("Meditation") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Meditation App Developer, Online Coach, or Digital Wellness Creator.";
+}
+
+// COOKING × INTERESTS
+if (habits.includes("Cooking") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "👨‍🍳 Food Blogger, Recipe Developer, or Culinary Writer.";
+} else if (habits.includes("Cooking") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Cooking Instructor, YouTube Chef, or Virtual Culinary Coach.";
+} else if (habits.includes("Cooking") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Chef, Caterer, or Restaurant Professional.";
+} else if (habits.includes("Cooking") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Chef, Culinary Traveler, or Food Critic.";
+} else if (habits.includes("Cooking") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Event Caterer, Street Food Entrepreneur, or BBQ Specialist.";
+} else if (habits.includes("Cooking") && interests.includes("Work with people")) {
+  suggestion = "👥 Cooking Class Teacher, Culinary Consultant, or Hospitality Professional.";
+} else if (habits.includes("Cooking") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Food Festival Chef, Culinary Influencer, or Restaurant Manager.";
+} else if (habits.includes("Cooking") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Event Caterer, Culinary Tourism Specialist, or Mobile Kitchen Chef.";
+} else if (habits.includes("Cooking") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Chef, Part-time Caterer, or Food Content Creator.";
+} else if (habits.includes("Cooking") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Pastry Chef, Baker, or Professional Cook.";
+} else if (habits.includes("Cooking") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Food Blogger, Online Recipe Creator, or Virtual Cooking Influencer.";
+}
+
+// GARDENING × INTERESTS
+if (habits.includes("Gardening") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🪴 Landscape Planner, Botanical Writer, or Gardening Blogger.";
+} else if (habits.includes("Gardening") && interests.includes("Work from home")) {
+  suggestion = "🏠 Indoor Gardening Consultant, Online Gardening Coach, or Plant Care Blogger.";
+} else if (habits.includes("Gardening") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Landscaper, Horticulturist, or Urban Gardening Specialist.";
+} else if (habits.includes("Gardening") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Landscape Designer, Gardening Workshop Host, or Eco-Consultant.";
+} else if (habits.includes("Gardening") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Botanist, Horticulture Specialist, or Park Designer.";
+} else if (habits.includes("Gardening") && interests.includes("Work with people")) {
+  suggestion = "👥 Community Garden Organizer, Gardening Teacher, or Eco-Club Mentor.";
+} else if (habits.includes("Gardening") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Gardening Event Organizer, Horticulture Exhibition Planner, or Eco-Activist.";
+} else if (habits.includes("Gardening") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Landscape Architect, Botanical Garden Planner, or Nursery Owner.";
+} else if (habits.includes("Gardening") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Gardening Consultant, Gardening Blogger, or Plant Seller.";
+} else if (habits.includes("Gardening") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Landscaper, Nursery Worker, or Organic Farming Specialist.";
+} else if (habits.includes("Gardening") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Gardening YouTuber, Plant App Developer, or Eco-Content Creator.";
+}
+
+// VOLUNTEERING × INTERESTS
+if (habits.includes("Volunteering") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "📄 NGO Admin, Community Fundraiser, or Social Media Manager for NGOs.";
+} else if (habits.includes("Volunteering") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Volunteer Coordinator, Virtual Fundraiser, or NGO Content Creator.";
+} else if (habits.includes("Volunteering") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Community Service Worker, Relief Worker, or Social Outreach Officer.";
+} else if (habits.includes("Volunteering") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International NGO Worker, Humanitarian Aid Worker, or Global Volunteer Coordinator.";
+} else if (habits.includes("Volunteering") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Environmental Volunteer, Disaster Relief Worker, or Wildlife Conservationist.";
+} else if (habits.includes("Volunteering") && interests.includes("Work with people")) {
+  suggestion = "👥 Community Leader, Social Worker, or NGO Coordinator.";
+} else if (habits.includes("Volunteering") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Volunteer Organizer, Public Relations Officer, or NGO Representative.";
+} else if (habits.includes("Volunteering") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Community Development Officer, Event Volunteer Manager, or NGO Project Worker.";
+} else if (habits.includes("Volunteering") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Part-time NGO Worker, Online Volunteer Mentor, or Fundraising Specialist.";
+} else if (habits.includes("Volunteering") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Habitat Builder, Relief Aid Distributor, or Community Service Volunteer.";
+} else if (habits.includes("Volunteering") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Online Volunteer, NGO Social Media Activist, or Digital Fundraiser.";
+}
+
+// MENTORING × INTERESTS
+if (habits.includes("Mentoring") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🧑‍💼 Corporate Trainer, Career Coach, or Education Counselor.";
+} else if (habits.includes("Mentoring") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Mentor, Remote Career Advisor, or Virtual Life Coach.";
+} else if (habits.includes("Mentoring") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Field Mentor, Outreach Educator, or Career Workshop Trainer.";
+} else if (habits.includes("Mentoring") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Coach, Global Mentor, or Motivational Speaker.";
+} else if (habits.includes("Mentoring") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Leadership Coach, Adventure Mentor, or Environmental Educator.";
+} else if (habits.includes("Mentoring") && interests.includes("Work with people")) {
+  suggestion = "👥 School Counselor, HR Trainer, or NGO Mentor.";
+} else if (habits.includes("Mentoring") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Career Fair Speaker, Public Mentor, or Industry Guide.";
+} else if (habits.includes("Mentoring") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Leadership Coach, Personal Development Mentor, or Event Trainer.";
+} else if (habits.includes("Mentoring") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Mentor, Life Coach, or Online Counseling Specialist.";
+} else if (habits.includes("Mentoring") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Vocational Mentor, Skill Development Trainer, or Technical Workshop Instructor.";
+} else if (habits.includes("Mentoring") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Online Course Creator, E-learning Coach, or Digital Mentor.";
+}
+
+// ORGANIZING EVENTS × INTERESTS
+if (habits.includes("Organizing events") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🧑‍💼 Corporate Event Planner, Conference Manager, or Office Event Coordinator.";
+} else if (habits.includes("Organizing events") && interests.includes("Work from home")) {
+  suggestion = "🏠 Virtual Event Planner, Online Workshop Coordinator, or Remote Event Manager.";
+} else if (habits.includes("Organizing events") && interests.includes("Move around while working")) {
+  suggestion = "🚶 On-Site Event Organizer, Exhibition Manager, or Logistics Coordinator.";
+} else if (habits.includes("Organizing events") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Destination Wedding Planner, International Event Manager, or Conference Organizer.";
+} else if (habits.includes("Organizing events") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Outdoor Event Manager, Festival Organizer, or Sports Event Planner.";
+} else if (habits.includes("Organizing events") && interests.includes("Work with people")) {
+  suggestion = "👥 Event Host, Client Relations Manager, or Community Event Organizer.";
+} else if (habits.includes("Organizing events") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Networking Event Manager, Business Meetup Organizer, or PR Event Specialist.";
+} else if (habits.includes("Organizing events") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Exhibition Organizer, Festival Coordinator, or Corporate + Outdoor Event Planner.";
+} else if (habits.includes("Organizing events") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Event Planner, Part-time Event Coordinator, or Wedding Planner.";
+} else if (habits.includes("Organizing events") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Stage Setup Manager, Logistics Supervisor, or Technical Event Assistant.";
+} else if (habits.includes("Organizing events") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Virtual Event Organizer, Webinar Coordinator, or Online Summit Manager.";
+}
+
+// PUBLIC SPEAKING × INTERESTS
+if (habits.includes("Public speaking") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🧑‍💼 Corporate Trainer, Motivational Speaker, or HR Presenter.";
+} else if (habits.includes("Public speaking") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Webinar Host, Virtual Trainer, or Podcast Speaker.";
+} else if (habits.includes("Public speaking") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Workshop Speaker, Seminar Host, or Field Educator.";
+} else if (habits.includes("Public speaking") && interests.includes("Travel for work")) {
+  suggestion = "✈️ International Speaker, Conference Host, or Global Trainer.";
+} else if (habits.includes("Public speaking") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Public Rally Speaker, Community Leader, or Outdoor Event Presenter.";
+} else if (habits.includes("Public speaking") && interests.includes("Work with people")) {
+  suggestion = "👥 Teacher, Politician, or Sales Presenter.";
+} else if (habits.includes("Public speaking") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Public Relations Specialist, Seminar Speaker, or Networking Host.";
+} else if (habits.includes("Public speaking") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Social Campaign Speaker, NGO Presenter, or Awareness Event Host.";
+} else if (habits.includes("Public speaking") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Trainer, Motivational Coach, or Part-Time Speaker.";
+} else if (habits.includes("Public speaking") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Workshop Demonstrator, Safety Trainer, or Technical Instructor.";
+} else if (habits.includes("Public speaking") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 YouTuber, Online Course Instructor, or Virtual Speaker.";
+}
+
+// TEAM SPORTS × INTERESTS
+if (habits.includes("Team sports") && interests.includes("Work at one place (desk job)")) {
+  suggestion = "🧑‍💼 Sports Analyst, Data Strategist for Teams, or Esports Manager.";
+} else if (habits.includes("Team sports") && interests.includes("Work from home")) {
+  suggestion = "🏠 Online Sports Coordinator, Esports Team Manager, or Remote Fitness Coach.";
+} else if (habits.includes("Team sports") && interests.includes("Move around while working")) {
+  suggestion = "🚶 Sports Trainer, Physical Education Instructor, or Athletic Coach.";
+} else if (habits.includes("Team sports") && interests.includes("Travel for work")) {
+  suggestion = "✈️ Professional Athlete, Sports Journalist, or Touring Team Coach.";
+} else if (habits.includes("Team sports") && interests.includes("Work outdoors")) {
+  suggestion = "🌳 Sports Coach, Outdoor Fitness Trainer, or Adventure Sports Guide.";
+} else if (habits.includes("Team sports") && interests.includes("Work with people")) {
+  suggestion = "👥 Team Manager, Group Fitness Trainer, or Sports Psychologist.";
+} else if (habits.includes("Team sports") && interests.includes("Meet new people regularly")) {
+  suggestion = "🤝 Event Organizer, Sports Ambassador, or Community Sports Leader.";
+} else if (habits.includes("Team sports") && interests.includes("Mix of indoor and outdoor work")) {
+  suggestion = "🏞️ Multi-sport Coach, Fitness Consultant, or Recreational Sports Manager.";
+} else if (habits.includes("Team sports") && interests.includes("Flexible timing")) {
+  suggestion = "⏰ Freelance Sports Coach, Part-time Trainer, or Athlete Mentor.";
+} else if (habits.includes("Team sports") && interests.includes("Hands-on/manual work")) {
+  suggestion = "🛠️ Sports Equipment Specialist, Team Assistant, or Fitness Instructor.";
+} else if (habits.includes("Team sports") && interests.includes("Digital/online work")) {
+  suggestion = "🌐 Esports Player, Online Sports Instructor, or Virtual Team Coach.";
+}
+
+
+    // --- Show result instantly ---
+    resultBox.innerHTML = `<h2>Career Suggestion:</h2><p>${suggestion}</p>`;
+    resultBox.style.display = "block";
+
+    // --- Save to Google Sheets ---
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData,
+      mode: "no-cors" // prevents CORS errors
+    });
+
+    form.reset();
+  });
+</script>
+</div>
+  </div>
+</body>
+</html>

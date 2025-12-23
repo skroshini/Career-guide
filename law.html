@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="margin-bottom: 20px;">
+  <a href="index.html" style="color: yellow; font-weight: bold; text-decoration: none;">← Back to Home</a>
+</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Law</title>
+  <link rel="icon" href="file:///C:/Users/SK%20ROSHINI/OneDrive/Desktop/logo.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #062e57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+    }
+nav {
+      background-color: #042244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+      color: white;
+      overflow-y: auto; /* ✅ Enables scroll when content overflows */
+    }
+
+    /* ✅ Scrollbar Styling for nav */
+    nav::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #0b3a67;
+    }
+
+    nav ul li:hover {
+      background-color: #0b3a67;
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      background: linear-gradient(to right, #143d66, #3e1b6e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      background-color: #003366;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-bar a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 778px) {
+      nav, .menu-bar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+.sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background-color: #2c3e50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Guide</h1>
+  </header>
+
+  <nav>
+<h2>CAREER FIELDS</h2>
+    <ul>
+      <li><a href="after10th.html" style="color: white; text-decoration: none;">What to do after 10th?</a></li>
+      <li><a href="cs.html" style="color: white; text-decoration: none;">Computer Science</a></li>
+      <li><a href="me.html" style="color:white; text-decoration: none;">Mechanical</a></li>
+      <li><a href="eee.html" style="color:white; text-decoration: none;">Electrical</a></li>
+      <li><a href="cv.html" style="color:white; text-decoration: none;">Civil</li>
+      <li><a href="ec.html" style="color:white; text-decoration: none;">Electronics</a></li>
+      <li><a href="bm.html" style="color:white; text-decoration: none;">Biomedical</a></li>
+      <li><a href="as.html" style="color:white; text-decoration: none;">Aerospace</a></li>
+      <li><a href="chem.html" style="color:white; text-decoration: none;">Chemical</a></li>
+      <li><a href="envi.html" style="color:white; text-decoration: none;">Environmental</a></li>
+      <li><a href="id.html" style="color:white; text-decoration: none;">Industrial</a></li>
+      <li><a href="st.html" style="color:white; text-decoration: none;">Software</li>
+      <li><a href="rob.html" style="color:white; text-decoration: none;">Robotics</li>
+      <li><a href="mf.html" style="color:white; text-decoration: none;">Medical Fields</a></li>
+      <li><a href="law.html" style="color:white; text-decoration: none;">Law</a></li>
+      <li><a href="literature.html" style="color:white; text-decoration: none;">Literature</a></li>
+      <li><a href="hm.html" style="color:white; text-decoration: none;">Hotel Management</a></li>
+      <li><a href="tf.html" style="color:white; text-decoration: none;">Teaching Fields</a></li>
+      <li><a href="baf.html" style="color:white; text-decoration: none;">Business and Finance</li>
+      <li><a href="re.html" style="color:white; text-decoration: none;">Real Estate</li>
+      <li><a href="sat.html" style="color:white; text-decoration: none;">Science and Technology</li>
+      <li><a href="arts.html" style="color:white; text-decoration: none;">Arts</li>
+      <li><a href="dam.html" style="color:white; text-decoration: none;">Design and Media</li>
+      <li><a href="gae.html" style="color:white; text-decoration: none;">Gaming and Esports</li>
+      <li><a href="gapa.html" style="color:white; text-decoration: none;">Government and Public Administration</li>
+      <li><a href="t.html" style="color:white; text-decoration: none;">Travel</li>
+      <li><a href="tah.html" style="color:white; text-decoration: none;">Tourism and Hospitality</li>
+      <li><a href="sam.html" style="color:white; text-decoration: none;">Sales and Management</li>
+     <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="menu-bar">
+    <a href="homepage.html">Home</a>
+  </div>
+  <main>
+    <div class="section">
+  <h1>Law</h1>
+ <p>A law course is an educational program or class that teaches the principles, systems, and practices of law and legal systems. It is designed to provide students with knowledge about how laws are made, interpreted, and applied within a society.  </p>
+  </div>
+
+ <div class="section">
+  <h2>Common Topics Covered in a Law Course:</h2>
+  <div class="study-grid">
+    <div class="study-box">
+      <i class="fas fa-balance-scale"></i>
+      <h3>Introduction to Law</h3>
+      <p>What law is and its role in society?</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-book"></i>
+      <h3>Legal Systems</h3>
+      <p>Common law, civil law, religious law, etc.</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-user"></i>
+      <h3>Constitutional Law</h3>
+      <p>Rights, government structure</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-user"></i>
+      <h3>Criminal Law</h3>
+      <p>Offenses and punishments</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-briefcase"></i>
+      <h3>Civil Law</h3>
+      <p>Contracts, torts, property</p>
+    </div>
+    <div class="study-box">
+      <i class="fas fa-globe"></i>
+      <h3>International Law</h3>
+      <p>Laws between nations</p>
+    </div>
+ <div class="study-box">
+      <i class="fas fa-bookmark"></i>
+      <h3>Legal Writing & Research</h3>
+      <p>How to write and interpret legal documents?</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .study-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .study-box i {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  .study-box h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .study-box p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  /* Hover Animation */
+  .study-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .study-box:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+</style>
+
+<!-- Font Awesome link (add in head if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <div class="section">
+    <h2>Skills You Will Gain</h2>
+    <ul>
+      <li>Legal Research Skills</li>
+      <li>Critical Thinking</li>
+      <li>Legal Reasoning & Analysis</li>
+      <li>Attention to Detail</li>
+      <li>Communication Skills</li>
+      <li>Negotiation & Persuasion</li>
+      <li>Time Management & Organization</li>
+      <li>Teamwork & Collaboration</li>
+      <li>Ethics & Professional Responsibility</li>
+      <li>Knowledge of Legal Systems</li>
+ </ul>
+  </div>
+<div class="section">
+  <h2>Useful Websites for Law Students</h2>
+  <ul>
+    <li><a href="https://www.legislative.gov.in/" target="_blank">India Government Legislative Website – Laws & Acts</a></li>
+    <li><a href="https://www.legalserviceindia.com/" target="_blank">Legal Service India – Articles & Case Studies</a></li>
+    <li><a href="https://www.scconline.com/" target="_blank">SCC Online – Judgments, Case Laws, and Updates</a></li>
+    <li><a href="https://www.lawctopus.com/" target="_blank">Lawctopus – Internships, Courses, and Resources</a></li>
+    <li><a href="https://www.edx.org/learn/law" target="_blank">edX – Free Online Law Courses</a></li>
+    <li><a href="https://www.nptel.ac.in" target="_blank">NPTEL – Law-related Courses</a></li>
+  </ul>
+
+  <style>
+    a {
+      color: rgb(72, 210, 210);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(65, 170, 167);
+    }
+  </style>
+</div>
+
+  <div class="section">
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Lawyer / Advocate / Attorney- Specialize in areas like criminal law, civil litigation, corporate law, family law, etc.</li>
+      <li>Judge / Magistrate- Preside over legal cases; usually requires years of experience and passing judicial exams.</li>
+      <li>Legal Advisor / In-House Counsel- Work within companies to handle contracts, compliance, and legal risks.</li>
+      <li>Public Prosecutor / Government Lawyer- Represent the state in criminal cases or work for government departments.</li>
+      <li>Legal Consultant- Provide expert legal advice to businesses, NGOs, or international bodies.</li>
+      <li>Corporate Legal Executive- Handle mergers, acquisitions, company law, compliance, and corporate governance.</li>
+      <li>Compliance Officer- Ensure businesses follow legal and regulatory requirements.</li>
+      <li>Contract Manager- Draft and manage business contracts and agreements.</li>
+      <li>HR Legal Specialist- Handle employment law, workplace disputes, and labor compliance.</li>
+      <li>International Human Rights Lawyer
+
+Work with organizations like the UN or Amnesty International.</li>
+      <li>Legal Officer in International Organizations
+
+Example: World Bank, WTO, UN bodies.</li>
+      <li>Policy Analyst / Legal Researcher
+
+Research and analyze laws, draft policy proposals.</li>
+
+    </ul>  </div>
+
+  <div class="section">
+    <h2>Best for students who</h2>
+    <ul>
+      <li>Enjoy Critical Thinking and Problem Solving</li>
+      <li>Have Strong Reading and Writing Skills</li>
+      <li>Are Interested in Justice, Rights & Social Impact</li>
+      <li>Communicate Effectively</li>
+      <li>Have Patience and Perseverance</li>
+      <li>Want Flexible Career Options</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Law Might NOT Be Ideal If You </h2>
+<li>Dislike reading dense material or writing formal papers.</li>
+
+ <li>Are uninterested in rules, policies, or technical interpretation.</li>
+
+ <li>Want a fast route to a job with minimal study.</li>
+</div>
+ <div class="section">
+    <h2>Various law courses</h2>
+    <p>Undergraduate Law Courses</p>
+    <ul>
+      <li>Bachelor of Laws (LL.B.)</li>
+      <li>Integrated Law Courses (5 years)- B.A. LL.B. (Law + Arts (e.g., political science, sociology)), B.B.A. LL.B. (Law + Business), B.Com. LL.B. (Law + Commerce), B.Sc. LL.B. (Law + Science), B.Tech LL.B. (rare)(Law + Technology)</li>
+       </ul>
+      <p>Postgraduate Law Courses</p>
+      <ul>
+      <li>Master of Laws (LL.M.)</li>
+      <li>Postgraduate Diplomas / Certificates</li>
+      <li>Doctor of Philosophy in Law (Ph.D./SJD/JSD)</li>
+      </ul>
+      <p>Specialized Law Courses (by Domain)</p>
+      <ul>
+      <li>Criminal Law</li>
+      <li>Constitutional Law</li>
+      <li>Corporate/Business Law</li>
+      <li>Intellectual Property (IP) Law</li>
+      <li>Cyber Law</li>
+      <li>International Law</li>
+      <li>Environmental Law</li>
+      <li>Tax Law</li>
+      <li>Labour/Employment Law</li>
+      <li>Human Rights Law</li>
+      <li>Family Law</li>
+      <li>Media & Entertainment Law</li>
+      <li>Real Estate Law</li>
+      <li>Maritime Law</li>
+    </ul>
+  </div>
+</style>
+<!-- Add Font Awesome for icons in <head> -->
+<div class="section">
+  <h2>Career Path Flowchart</h2>
+  
+  <div class="flowchart">
+    <div class="flow-step">
+      <i class="fas fa-school"></i><br>
+      After 10th
+      <small>Choose any stream(preferably Arts or Commerce)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-pencil-alt"></i><br>
+      After 12th
+      <small>Appear for Law Entrance Exams in Class 12
+     (CLAT, LSAT-India, AILET, SLAT, etc.)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-university"></i><br>
+      Under graduation
+      <small>Get Admission into 5-Year Integrated Law Course
+         (BA LL.B / BBA LL.B / B.Com LL.B etc.)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i><br>
+      Complete 5-Year Law Degree
+      <small>(Includes internships & moot court activities)</small>
+    </div>
+    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+    
+    <div class="flow-step">
+      <i class="fas fa-briefcase"></i><br>
+      Choose Your Legal Career Path
+      <small>
+   Litigation,Judiciary, Corporate Law, LL.M. / PhD, Civil Services
+  </small>
+    </div>
+   </div>
+
+<style>
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-step {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-step i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.4s ease;
+  }
+
+  .flow-step small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+  }
+
+  /* Hover effects */
+  .flow-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+    border-color: #ffcc00;
+  }
+
+  .flow-step:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #ffd633;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    color: #ffcc00;
+    font-size: 22px;
+    margin: 5px 0;
+    animation: arrowBounce 1.2s infinite;
+  }
+
+  /* Arrow animation */
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+
+<!-- Font Awesome link (only once in head) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</main>
+</body>
+</html>
